@@ -1,0 +1,85 @@
+---
+title: "Active learning during conversation: sensitivity to cost and opportunity for choice in real world language learning contexts"
+short-title: "An APA style short title"
+output: kmr::apa_manuscript
+csl: apa6.csl
+bibliography: library.bib
+document-params: "a4paper,man,apacite,floatsintext"
+bib-tex: "library.bib"
+author-information:
+    - \author{Kyle MacDonald}
+affiliation-information:
+    # Single affiliation
+    - \affiliation{Department of Psychology, Stanford University}
+author-note:
+    "Readers: Michael C. Frank, Hyowon Gweon, and Anne Fernald"
+abstract: 
+    ""
+---
+
+```{r global_options, include=FALSE}
+rm(list=ls())
+knitr::opts_chunk$set(fig.path='figs/', echo=F, warning=F, cache=T, message=F, sanitize=T)
+```
+
+# Introduction 
+
+Short version of the entire argument.
+
+### Active learning
+### Resource-rational active learning
+### Active learning during conversation 
+
+# Part 1: Active learning
+
+## What is active learning? And why do we care?
+
+## What's missing from current developmental models of active learning? 
+
+
+# Part 2: Resource-rational models of cognition
+
+## Rational choice theory
+
+## Overview of bounded rationality
+
+## Bridging levels of analysis 
+
+## Cost-sensitive AI
+
+## Cost-sensitive human learning
+
+## Overview of ecological rationality 
+
+## Review of ecological rational models
+
+# Part 3: Active learning during conversation
+
+## Why should we care about the conversational context?
+
+## What does a converstation look like?
+
+## What behaviors are available? 
+
+### Behavior 1: speaker choice
+#### Utility analysis
+#### Ecological opportunity
+
+### Behavior 2: attention
+#### Utility analysis
+#### Ecological opportunity
+
+### Behavior 3: questions
+#### Utility analysis
+#### Ecological opportunity
+
+# Looking ahead
+
+
+\newpage
+
+# References 
+
+\setlength{\parindent}{-0.1in} 
+\setlength{\leftskip}{0.125in}
+\noindent

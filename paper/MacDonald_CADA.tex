@@ -1,0 +1,153 @@
+% Template for APA submission with R Markdown
+
+% Stuff changed from PLOS Template
+\documentclass[a4paper,man,apacite,floatsintext]{apa6}
+\usepackage{apacite}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+
+% hyperref package, useful for hyperlinks
+\usepackage{hyperref}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+
+% Sweave(-like)
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl}
+\newenvironment{Schunk}{}{}
+\DefineVerbatimEnvironment{Code}{Verbatim}{}
+\DefineVerbatimEnvironment{CodeInput}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{CodeOutput}{Verbatim}{}
+\newenvironment{CodeChunk}{}{}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+\usepackage{color}
+
+% Use doublespacing - comment out for single spacing
+%\usepackage{setspace}
+%\doublespacing
+
+
+% Text layout
+\topmargin 0.0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 16cm
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+% Leave date blank
+\date{}
+
+%\pagestyle{myheadings}
+%% ** EDIT HERE **
+
+
+%% ** EDIT HERE **
+%% PLEASE INCLUDE ALL MACROS BELOW
+
+%% END MACROS SECTION
+
+
+% ALL OF THE TITLE PAGE INFORMATION IS SPECIFIED IN THE YAML
+\title{\textbf{Active learning during conversation: sensitivity to cost and opportunity
+for choice in real world language learning contexts}}
+\shorttitle{An APA style short title}
+
+\author{Kyle MacDonald}
+
+\affiliation{Department of Psychology, Stanford University}
+
+\authornote{Readers: Michael C. Frank, Hyowon Gweon, and Anne Fernald}
+\abstract{}
+\keywords{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{introduction}
+
+\section{Part 1: Bounded rationality}\label{part-1-bounded-rationality}
+
+\subsection{Overview of bounded
+rationality}\label{overview-of-bounded-rationality}
+
+\subsection{Bridging levels of
+analysis}\label{bridging-levels-of-analysis}
+
+\subsection{Cost-sensitive AI}\label{cost-sensitive-ai}
+
+\subsection{Cost-sensitive human
+learning}\label{cost-sensitive-human-learning}
+
+\section{Part 2: Ecological
+rationality}\label{part-2-ecological-rationality}
+
+\subsection{Overview of ecological
+rationality}\label{overview-of-ecological-rationality}
+
+\subsection{Review of ecological rational
+models}\label{review-of-ecological-rational-models}
+
+\section{Part 3: Active learning during
+conversation}\label{part-3-active-learning-during-conversation}
+
+\subsection{What is active learning? And why might it be
+benefiical?}\label{what-is-active-learning-and-why-might-it-be-benefiical}
+
+\subsection{Why should we care about learning from conversation? And
+what does a converstation look
+like?}\label{why-should-we-care-about-learning-from-conversation-and-what-does-a-converstation-look-like}
+
+\subsection{What behaviors are
+available?}\label{what-behaviors-are-available}
+
+\subsubsection{Behavior 1: speaker
+choice}\label{behavior-1-speaker-choice}
+
+\paragraph{Utility}\label{utility}
+
+\paragraph{Ecological opportunity}\label{ecological-opportunity}
+
+\subsubsection{Behavior 2: attention}\label{behavior-2-attention}
+
+\paragraph{Utility}\label{utility-1}
+
+\paragraph{Ecological opportunity}\label{ecological-opportunity-1}
+
+\subsubsection{Behavior 3: questions}\label{behavior-3-questions}
+
+\paragraph{Utility}\label{utility-2}
+
+\paragraph{Ecological opportunity}\label{ecological-opportunity-2}
+
+\section{Looking ahead}\label{looking-ahead}
+
+\newpage
+
+\section{References}\label{references}
+
+\setlength{\parindent}{-0.1in} \setlength{\leftskip}{0.125in} \noindent
+
+\bibliography{library.bib}
+
+\end{document}
