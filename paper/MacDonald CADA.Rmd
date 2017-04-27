@@ -1,6 +1,6 @@
 ---
-title: "Active learning during conversation: sensitivity to cost and opportunity for choice in real world language learning contexts"
-short-title: "An APA style short title"
+title: "Active learning is social and social learning is active: a case study of learning words from conversation"
+short-title: "Active learning is social learning"
 output: kmr::apa_manuscript
 csl: apa6.csl
 bibliography: library.bib
@@ -24,57 +24,82 @@ knitr::opts_chunk$set(fig.path='figs/', echo=F, warning=F, cache=T, message=F, s
 
 # Introduction 
 
-Short version of the entire argument.
+[Some interesting motivating example]
 
-### Active learning
-### Resource-rational active learning
-### Active learning during conversation 
+
+**Active learning is social**
+
+- Hypothesis: the social context can change the cost/benefit structure of choices made for learning and therefore we must include this information in our models of self-directed learning, which often view the learner as flipping back and forth between active exploration and passive reception. This type of active learning account does not leave room for social reasoning processes (i.e., native utility calculus stuff) to change the value of an active learning behavior.
+- Effective active learning involves generating the best evidence relative to your current state (hypotheses, cognitive resources, time, and goals). 
+- Note that there's an interesting distinction between active learning behaviors that directly affect social targets (or are directed towards social targets) such as questions and social referencing compated to active learning behaviors that might be changed by the presence of a social partner or being in a communicative context such as gaze patterns to explore the visual world or motor behaviors to explore a new toy.
+
+**Social learning is active**
+
+- Hypothesis: Social interactions that yield information can productively be construed as active learning. 
+- Teaching is providing opportunities for learner to engage in effective active learning.
+- Inference about inferences, or what would other people learn given their hypothesis and some evidence. Teaching as inverting the active learning process of another. 
+- Effective active learning involves generating the best evidence relative to your current state (hypotheses, cognitive resources, time, and goals). 
+
+**Active-social learning of words from conversation**
+
+This analysis explains a range of choice behaviors available to the learner during conversation from the micro (eye-movements) to the macro (decisions about conversational partners). 
 
 # Part 1: Active learning
 
-## What is active learning? And why do we care?
+## What is active learning? 
 
-## What's missing from current developmental models of active learning? 
+The potential benefits of active learning have been the focus of much research in education [@grabinger1995rich], machine learning [@settles2012active], and cognitive science [@castro2009human]. In a review of this diverse literature, @gureckis2012self suggest that active learning can be superior to passive learning because it allows people to use their prior experience and current hypotheses to select the most helpful examples (e.g., asking a question about something that is particularly confusing). But is active learning always better than passive learning?
+
+[^1]: Here we focus on deliberate decisions about what to learn, as opposed to other uses of the term "active" learning (e.g., being engaged with learning materials).
+
+## Why is active learning so powerful? 
+
+## What's missing from the active learning account?
+
+# Part 2: Social learning
+
+## What is social learning? 
+
+Social learning is the accumulation of knowledge based on the sampling decisions of other agents (e.g., via the framework in Shafto et al., 2012). Requires reasoning about why the other agent made the choices they did. 
+
+Models of social learning:
+  * Sobel and Kirkham 
+  
+
+## Why is social learning so powerful? 
+
+## What's missing from the social learning account?
 
 
-# Part 2: Resource-rational models of cognition
+# Part 3: Active learning is social learning
 
-## Rational choice theory
+Models of seeking information from social targets: 
+  * Baldwin & Moses (1998): The Ontogeny of Social Information gathering
+  * Chouinard (2007): Children's questions as learning mechanism
+  * 
 
-## Overview of bounded rationality
 
-## Bridging levels of analysis 
-
-## Cost-sensitive AI
-
-## Cost-sensitive human learning
-
-## Overview of ecological rationality 
-
-## Review of ecological rational models
-
-# Part 3: Active learning during conversation
+# Part 4: Case study of active learning during conversation
 
 ## Why should we care about the conversational context?
 
-## What does a converstation look like?
-
-## What behaviors are available? 
+## What does a converstation look like? What behaviors are available? 
 
 ### Behavior 1: speaker choice
 #### Utility analysis
 #### Ecological opportunity
 
-### Behavior 2: attention
+### Behavior 2: attention (integrating between success and failures)
 #### Utility analysis
 #### Ecological opportunity
 
-### Behavior 3: questions
+### Behavior 3: questions (why didn't questions get asked in this setting?) --> Markman et al. 
 #### Utility analysis
 #### Ecological opportunity
 
 # Looking ahead
 
+## Part 3: Active learning of words from conversation 
 
 \newpage
 
