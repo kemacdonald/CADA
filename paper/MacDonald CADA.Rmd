@@ -1,6 +1,6 @@
 ---
-title: "Social contexts shape learners' choices during language learning"
-short-title: "Active learning in social contexts"
+title: "Language learning from conversations: the influence of social contexts on active learning behaviors"
+short-title: "Language learning is active and social"
 output: kmr::apa_manuscript
 csl: apa6.csl
 bibliography: library.bib
@@ -11,9 +11,9 @@ affiliation-information:
     # Single affiliation
     - \affiliation{Department of Psychology, Stanford University}
 author-note:
-    "Fulfillment of Conceptual Analysis of Dissertation Area. Readers: Michael C. Frank, Hyowon Gweon, and Anne Fernald"
+    "Conceptual Analysis of Dissertation Area. Readers: Michael C. Frank, Hyowon Gweon, and Anne Fernald"
 abstract: 
-    "Human language acquisition presents a remarkable learning challenge. Fortunately, children acquire language from knowledgable caregivers who can shape the input to help them learn. Moroever, as children get older, they become more adept at choosing behaviors to shape the environment to better support their own learning. But how do these two important learning forces interact? In this paper, I explore the hypothesis that social languge learning contexts can be productively construed as opportunities for constrained active learning. I review the literature showing how active and social-pedagogcial contexts change learning behaviors. Then, I review work that attempts to synthesize active and social learning. Finally, I present a case study of decisions about where to allocate visual attention during language comprehension as an example of how including the presence of a social learning contexts can change the underlying computations that drive behavior during language learning."
+    "Human language learning is a striking accomplishment. How do children progress from being unable to understand or produce words to using language to communicate their goals, to ask questions, and to coordinate others' behaviors? In this paper, I propose that conversations -- the fundamental language learning context -- can be productively construed as opportunities for constrained self-directed learning, allowing children to shape the input to language learning mechansims. I also argue that integrating formal models of social learning with models of decision making provides a productive framework to better understand the mutual influence of these two factors on language learning. Finally, I present a conceptual analysis of children's decisions about where to allocate visual attention during language comprehension to illustrate the utility of this framework."
 
 keywords:
   "language acquisition, active learning, social learning, theory"
@@ -24,31 +24,24 @@ rm(list=ls())
 knitr::opts_chunk$set(fig.path='figs/', echo=F, warning=F, cache=T, message=F, sanitize=T)
 ```
 
+> *Conversation provides a forum for using language. It displays language embedded in larger systems for communication and so should present children with critical material for making sense of language as they try to understand others and make themselves understood.* (E. Clark, 2009, p. 21)
+
 # Introduction 
 
-Human language learning is a remarkable feat. Consider that infants, despite possessing limited information processing capacities, go on to develop adult vocabularies ranging from 50,000 to 100,000 distinct words [@bloom2002children], allowing them to express internal desires, to coordinate with others, and to transmit cultural knowledge to the next generation. But, to become a skilled language user is by no means trivial and children must solve a variety of complex problems such as word segmentation [@saffran1996statistical], reducing referential uncertainty [@quine19600], and making appropriate generalizations (CITE). Moreover, they must do this all while processing a dynamic, emphemoral stream of information that unfolds rapidly in time. 
+Human language learning is a remarkable feat. Consider that children, despite possesing limited processing capabilities, develop language skills quite rapidly, building an adult vocabulary ranging betewen 50,000 to 100,000 distinct words [@bloom2002children]. However, even to learn the meaning of a concrete noun, children must solve a variety of complex learning problems, such as segmenting discrete words from continuous speech stream [@saffran1996statistical], reducing referential uncertainty to link words to concepts [@quine19600], and making the appropriate generalizations to new contexts [@xu2007word]. What makes this process even more impressive is that children must accomplish all of this using input that can be noisy, transient, and unfolds rapidly in time. How do children do it?  
 
-Fortunately, language learners do not have to solve these problems on their own since much of their learning input comes from caregivers, other knowledgeable adults, and older peers [@clark2009first; @bloom2002children]. Moreover, as children get older and become more adept at intervening on their environments, they can take a more "active" role in shaping the input to their current state [@baldwin1996ontogeny]. And recent work in machine learning [@settles2012active] and cognitive science [@castro2009human; @markant2014better] suggests that providing the learner additional control can lead to superior learning outcomes compared to more passive contexts.
+Fortunately, young language learners do not have to solve these problems on their own since the majority of input to language learning mechansims comes from *conversations* with more knowledable others. Social-pragmatic theories of language acquisition have emphasized the importance of these social interactions for reducing the difficulty of various language learning challenges [@clark2009first; @bloom2002children; @hollich2000breaking]. Moreover, recent modeling work has formalized the role of social reasoning processes (e.g., thinking about others' goals) in word/concept learning [@shafto2012learning; @frank2014inferring] and infant-directed speech [@eaves2016infant]. 
 
-However, one of the fundamental open questions in developmental psychology is to explain how children's developing active learning skills interact with their social learning environments to support their  their impressive languauge learning. In this paper, I present the hypothesis that the social context in which language learning occurs can be productively construed as opportunities for constrained active learning. The key insight is that language learning is a fundamentally social endeavor where the presence of another agent shapes the cost/benefit calculus for learners' choices. This analysis attempts to explain a range of choice behaviors available to the learner during language lerning from the micro (eye-movements to gather information to understand langauge in real-time) to the macro (decisions about conversational partners). 
+However, social partners are just one of the forces that can shape the input to children's language learning mechansims. Another important factor is the choices that children make. That is, children are not just passive recipients of language; instead, they can select behaviors (e.g., ask questions) that modulate the content, pacing, and sequence of information during conversation. Recent empirical work across a variety of domains has begun to explore the effects of self-directed choice on learning outcomes, showing that additional control can lead to speedier and more robust learning compared to more passive contexts [@settles2012active; @castro2009human; @markant2014better].
 
-The plan for the paper is as follows. First, I review the literature on the basic mechanisms that lead to better outcomes for active learning compared to passive learning. Then, I present formal models of ow learning changes in social contexts along with evidence that supports the importance of social-pragmatic contexts for language learning. Finally, I present a concpetual analysis of the active allocation of visual attention during language comprehension as a case study of how the active-social conceptual framework provides a way forward for understanding the interplay between social and active learning.
+One important challenge for the field of language aquisition is to precisely characterize the interactions between fundamentally social learning contexts, social reasoning, and children's developing ability to exert control over their environments. In this paper, I argue that learning from conversation can be productively construed as providing rich opportunities for *constrained active learning*. The key insight is that the presence of other people qualitatively changes the cost/benefit calculus for learners' choices, which in turn shapes subsequent input to language leanring mechanisms. 
+The plan for the paper is as follows. I first review evidence that supports the importance of social contexts for language learning, integrating ideas from formal models of social learning. In part II, I connect the social learning ideas with research on formal models of decision making that emphasize the utility structure of different actions available to the learner. I present a conceptual utility analysis of a wide variety of behaviors available to the developing language learner. I end by introducing a case study -- the allocation of visual attention to gather information for language comprehension -- to illustrate the usefulness of this framework for understanding the joint effects of social and self-directed learning processes on language acquisition.
 
-# Part 1: Active learning
+# Part 1: Language learning is a social process
 
-## What is "active" learning? 
+## Language learning as social interaction
 
-The potential benefits of active learning have been the focus of much research in education [@grabinger1995rich], machine learning [@settles2012active], and cognitive science [@castro2009human]. In a review of this diverse literature, @gureckis2012self suggest that active learning can be superior to passive learning because it allows people to use their prior experience and current hypotheses to select the most helpful examples (e.g., asking a question about something that is particularly confusing). But is active learning always better than passive learning?
-
-[^1]: Here we focus on deliberate decisions about what to learn, as opposed to other uses of the term "active" learning (e.g., being engaged with learning materials).
-
-## Why is active learning superior to passive learning? 
-
-## What is missing from the active learning account?
-
-# Part 2: Social learning
-
-## What is social learning? 
+## Formal models of learning from others
 
 Social learning is the accumulation of knowledge based on the sampling decisions of other agents (e.g., via the framework in Shafto et al., 2012). Requires reasoning about why the other agent made the choices they did. 
 
@@ -64,15 +57,45 @@ Examples:
 
 ## What is missing from the social learning account?
 
-# Part 3: Active learning behaviors in social contexts
-
 Models of seeking information from social targets: 
   * Baldwin & Moses (1998): The Ontogeny of Social Information gathering
   * Chouinard (2007): Children's questions as learning mechanism
 
-# Part 4: Case study of active information gathering via visual fixations
+# Part 2: Active learning as rational decision making
 
-# Conclusions
+Classic theories of development have shared the intuition that knowledge acquisition is a fundamentally active process, with the learner playing an important role in shaping the learning environment (Bruner, Piaget, Vygotsky). And recent theoretical and empirical work has formalized these ideas by characterizing development as a process of active hypothesis testing and theory revision that can be described by principles of Bayesian reasoning (Gopnik; Schulz, 2007). 
+
+Moreover, the potential benefits of active learning have been the focus of empirical work from a broad set of research areas, including fields such as education [@grabinger1995rich], machine learning [@settles2012active], and cognitive science [@castro2009human]. Across these different literatures, the term "active learning" has been used to mean a variety of behaviors such as question asking (cite), increased physical activity (cite), or active memory retrieval (cite). 
+
+In this paper, I focus on a specific subset of active learning behaviors: the *decisions* that people make, or could make, during learning. That is, the capacity to exert control over the learning experience, including the selection, sequencing, or pacing of new information. 
+
+Markant et al. (2016) describe the benefits as "enhanced memory may be a common outcome of active learning that can arise from a number of distinct mechanisms, depending on the kinds of control afforded by an instructional activity"
+
+Examples:
+  * Encoding of Distinctive Sensorimotor Associations
+  * Elaborative Encoding Through Goal-Directed Search and Planning
+  * Co-ordination of Selective Attention and Memory Encoding
+  * Adaptive Selection of Material
+  * Enhanced Memory Due to Metacognitive Monitoring 
+
+Focusing of learners' choices is beneficial since there is a rich literature that has formalized decision making process, which can be used to describe choices made during learning. 
+
+## Active learning as decision making 
+
+Active learning takes into account a utility structure that can include both the costs of data acquisition and the rewards of choosing an example (e.g., in terms of information acquisition/uncertainty reduction relative to some longer term learning goal). 
+
+Process:
+1) analyze costs and benefits of behavior
+2) planning models that take into account long-term value
+3) decisions in the brain and in non-human primates 
+
+## What is missing from the active learning account?
+
+The presence of another agent can change the cost/benefit structure of choices made for learning and therefore we must include this information in our models of self-directed learning, which often view the learner as moving back and forth between active exploration and passive reception. This type of active learning account does not leave room for social reasoning processes (i.e., native utility calculus stuff) to change the value of an active learning behavior.
+
+# Part 3: Active information gathering via visual fixations to understand language
+
+# Conclusion
 
 Models of self-directed learning cannot continue to ignore the social-communicative context in which learning often occurs. Reasoning/inferences about other people should modulate the choices that learners make: whether it's who to talk to, what to attend to, or what questions to ask.
 
