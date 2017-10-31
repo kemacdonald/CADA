@@ -1,0 +1,45 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:learning_overview}How active and social learning affect basic learning processes with relevant citations.}
+\begin{tabular}{llll}
+\toprule
+Type of learning & \multicolumn{1}{c}{Change in learning process} & \multicolumn{1}{c}{Proposed mechanism} & \multicolumn{1}{c}{Example papers}\\
+\midrule
+Social & Enhanced attention and memory & The presence of social partners makes information more salient and more likely to be learned & NA\\
+Social & Better information & Social partners tune input to learner's current cognitive state & NA\\
+Social & More restrictive Inferences and generalization & Psychological reasoning leads to stronger inferences. Information presented in social contexts is more likely to generalize & NA\\
+Active & Enhanced memory & Active behaviors engage a range of basic memory mechanisms such as encoding of distinctive sensorimotor associations, coordination of selective attention and encoding, and enhanced metacognitive monitoring & NA\\
+Active & Better information & Learner have access to prior knowledge, current hypotheses, and ability level, which they can leverage to create more helpful learning contexts & NA\\
+Active & Less restrictive inferences and generalization & In these cases, self-directed learners might at first default to a weak sampling assumption. Weak sampling implies less restrictive generalization because the sampling process itself conveys no information about the to-be-learned concept. & NA\\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[h]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:oed_table}How features of social learning contexts map onto different components of the OED account.}
+\begin{tabular}{lllll}
+\toprule
+OED model component & \multicolumn{1}{c}{Description} & \multicolumn{1}{c}{Developmental challenge} & \multicolumn{1}{c}{Effect of social context} & \multicolumn{1}{c}{Relevant literatures}\\
+\midrule
+Inquiry goals & targets of information seeking behaviors. "What should I learn?" & Where do inquiry goals come from? How do children select which inquiry goal to pursue? & Initialize and/or constrain the inquiry goals under consideration. Introduce social goals (i.e., reputation management) & Zone of Proximal Development; Guided Play; Guided Participation; Performance vs. learning goals\\
+Hypotheses & beliefs about the world. "this toy is a dax" & Where do hypotheses come from? How to select likely hypotheses? & Reduce the space of possible hypotheses & NA\\
+Questions & actions that gather information about hypotheses. "Is that a dax?" & How to generate good questions? & model useful questions and provide question templates & NA\\
+Answers & outcomes that occur in response to questions. "yes, that's a dax." & How to find good answers? & provide answers that contain generalizable information & NA\\
+Stopping rules & decisions to stop collecting information & How to know when to stop collecting information? & constrain exploration. Encourage persistence & NA\\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 
