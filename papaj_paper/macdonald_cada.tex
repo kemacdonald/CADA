@@ -20,6 +20,46 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
 
 % Table formatting
 \usepackage{longtable, booktabs}
@@ -366,7 +406,23 @@ inferences. In this section, I briefly review the evidence for each
 pathway, with the goal of providing a high-level taxonomy of social
 learning effects.
 
-\subsubsection{Social contexts enhance attention and
+\begin{table}[tb]
+\centering
+\caption{High level summary of three different paths through which active and social contexts influence learning. See Part I (social learning) and Part 2 (active learning) for more details and reviews of the behavioral evidence.} 
+\label{act_soc}
+\begin{tabular}{p{1.5in}|p{2in}|p{2in}}
+ {\textbf{Learning component}} & {\textbf{Active learning}} & {\textbf{Social learning}} \\ 
+  \hline
+Attention and memory & Engages attention, coordinates attention to the learning moment, and enhances uncertainty monitoring & Increases arousal and enhances attention/memory processes \\ 
+   \hline
+Quality of the input & Generates high quality input that is linked to prior knowledge,  hypotheses, and ability & Generates high quality input shaped to the learner's current cognitive abilities and goals \\ 
+   \hline
+Inferences and generalization & Behaviors selected without knowledge of the target concept, leading to weaker inferences and generalization & Behaviors selected with knowledge of the target concept, leading to stronger inferences and generalization \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\subsection{Social contexts enhance attention and
 memory}\label{social-contexts-enhance-attention-and-memory}
 
 From infancy humans preferentially attend to social information. For
@@ -436,7 +492,7 @@ particularly beneficial -- either because the information is tuned to
 children's current cognitive abilities or because the information is
 likely to generalize.
 
-\subsubsection{\texorpdfstring{Social contexts provide \enquote{good}
+\subsection{\texorpdfstring{Social contexts provide \enquote{good}
 information}{Social contexts provide good information}}\label{social-contexts-provide-good-information}
 
 The idea that children's input might be shaped to facilitate their
@@ -477,8 +533,8 @@ A third piece of evidence comes from research on children's early word
 learning. Social-pragmatic theories of language acquisition emphasize
 the importance of social cues for reducing the referential uncertainty
 present when children are trying to acquire novel words (P. Bloom, 2002;
-Clark, 2009; Hollich et al., 2000). Empirical work by C. Yu and Smith
-(2012a) shows that young learners tend to retain words that are
+E. V. Clark, 2009; Hollich et al., 2000). Empirical work by C. Yu and
+Smith (2012a) shows that young learners tend to retain words that are
 accompanied by clear referential cues (e.g., adults' pointing and gaze
 direction), which serve to make a single object dominant in the visual
 field (C. Yu \& Smith, 2013; C. Yu, Ballard, \& Aslin, 2005). Moreover,
@@ -497,7 +553,7 @@ partner. A third way social contexts shape learning is by engaging a
 powerful set of social reasoning processes that change how much learners
 learn from new evidence.
 
-\subsubsection{Social contexts shape inferences and
+\subsection{Social contexts shape inferences and
 generalization}\label{social-contexts-shape-inferences-and-generalization}
 
 One defining feature of social learning is that people's actions are not
@@ -592,25 +648,31 @@ these accounts dovetail with evolutionary models that emphasize the
 importance of pedagogy for the accumulation of human cultural knowledge
 (Boyd et al., 2011; Kline, 2015).
 
-\begin{table}[tb]
-\centering
-\caption{High level summary of three different ways that  active and social contexts affect the learning process.} 
-\label{act_soc}
-\begin{tabular}{p{1.5in}|p{2in}|p{2in}}
- {\textbf{Learning component}} & {\textbf{Active learning account}} & {\textbf{Social learning  account}} \\ 
-  \hline
-Attention and memory & Active learning engages sensorimotor associations, coordinates selective attention, and enhances uncertainty monitoring & Social partners enhances the learner's attention to relevant information \\ 
-   \hline
-Quality of the input & Active learning provide uses prior knowledge,  hypotheses, and ability  to generate higher quality input & Social partners generate high quality input that is shaped to the learner's current cognitive abilities \\ 
-   \hline
-Inferences and generalization & Active learning assumes weak sampling, leading to less-restrictive generalization & Social partners generate goal-directed behavior, leading  to stronger inferences and generalation \\ 
-   \hline
-\end{tabular}
-\end{table}
+\subsection{Social learning summary}\label{social-learning-summary}
 
-\subsubsection{Social learning summary}\label{social-learning-summary}
+Taken together, the work reviewed in this section highlight several
+points about social learning. First, from an early age, children are
+surrounded by other people who know more than they do. Moreover, these
+more knowledgable agents are invested in children's development and
+motivated to provide rich learning opportunities. Second, from infancy
+children are motivated to interact with other people, and these
+interactions are exciting and guide attention to relevant information in
+the environment. Finally, social learning contexts engage a
+sophisticated set of psychological reasoning mechanisms that build off
+children's capacity for detecting others' goal-directed behavior.
+Critically, the output of this social reasoning process is that learners
+are able to make stronger inferences about observed evidence, and in
+effect, extract more information out of their input.
 
-TODO
+However, it is clear that social input does not account for all of
+children's rapid conceputal development. Put another way, children are
+not just passively receiving input from the world and from other people.
+Instead, they actively process incoming information and select behaviors
+that change what they learn. A parallel body of research on children's
+\enquote{active learning} has developed alongside the social learning
+work. Thus, in the next section, I review this work with the goal of
+answering the question: how do children shape their own learning
+experiences?
 
 \section{Part II: Learning on your
 own}\label{part-ii-learning-on-your-own}
@@ -649,7 +711,7 @@ Part II with some discussion of why studying active learning might be
 particularly challenging to motivate the Optimal Experiment Design
 formaliztion presented in Part III.
 
-\subsubsection{Active contexts enhances attention and
+\subsection{Active contexts enhances attention and
 memory}\label{active-contexts-enhances-attention-and-memory}
 
 A growing body of research has demonstrated that giving people control
@@ -723,7 +785,7 @@ in-the-moment learning. However, the effects of active control go beyond
 changing lower-level cognitive processes and modulate the quality of
 \emph{information} that learners get from the world.
 
-\subsubsection{\texorpdfstring{Active contexts provide \enquote{good}
+\subsection{\texorpdfstring{Active contexts provide \enquote{good}
 information}{Active contexts provide good information}}\label{active-contexts-provide-good-information}
 
 One defining feature of active learning is that people gather
@@ -739,41 +801,83 @@ compared to passive contexts where the learner has less control.
 For example, Castro et al. (2009) directly compared adults category
 learning in active vs.~passive contexts to predictions from statistical
 learning theory to quantify how well active learners do when compared to
-a model of optimal active learning. Active learning was always superior
-to passive learning with adults learning the category structure in less
-time and achieving higher levels of accuracy. However, the human active
-learners did not reach the performance of the optimal model and the
-advantage for active over passive learning decreased in the more
-difficult (i.e., noisier) learning tasks.
+a model of optimal active learning. Participants were shown a sequence
+of 3-D objects on a computer screen that varied along a single,
+continuous dimension (spiky to smooth) and given feedback as to which
+category the stimulus belonged to. Participants task was to learn the
+correct category boundary. In the active condtion, learners could select
+which object they wanted labeled; whereas, in the passive condition,
+participants saw stimuli generated randomly from the true category
+boundaries. Active learning was always superior to passive learning with
+adults learning the category structure in less time and achieving higher
+levels of accuracy. However, the human active learners did not reach the
+performance of the ideal observer model and the advantage for active
+over passive learning decreased in the more difficult (i.e., noisier)
+learning tasks.
 
-Using a similar model-based approach, D. B. Markant and Gureckis (2014)
-investigated the effects of active vs.~passive hypothesis testing on the
-rate of adults' category learning. They varied the difficulty of the
-learning task by testing two different types of category structures: a
-rule-based category, which varied along a single dimension (easier to
-learn), and an information-integration category, which varied along two
-dimensions (harder to learn). In the active condition, the learner could
-choose specific observations from the category to test their beliefs;
-whereas, in the passive condition, the sequence of data was generated
-randomly by the experiment. Similar to the Castro et al. (2009)
-findings, participants in the active condition learned the category
-structure faster and achieved a higher overall accuracy rate compared to
-the passive learners, but only for the simpler, rule-based category.
+Using a similar approach, D. B. Markant and Gureckis (2014) investigated
+the effects of active vs.~passive hypothesis testing on the rate of
+adults' category learning. They varied the difficulty of the learning
+task by testing two different types of category structures: a rule-based
+category, which varied along a single dimension (easier to learn), and
+an information-integration category, which varied along two dimensions
+(harder to learn). In the active condition, the learner could choose
+specific observations from the category to test their beliefs; whereas,
+in the passive condition, the sequence of data was generated randomly by
+the experiment. D. B. Markant and Gureckis (2014) also included a
+\enquote{yoked} passive condition where participants saw sequences of
+obbservations generated by active learners, but did not have control
+over the sequence. Similar to the Castro et al. (2009) findings,
+participants in the active condition learned the category structure
+faster and achieved a higher overall accuracy rate compared to the
+passive learners and the yoked-passive learners. D. B. Markant and
+Gureckis (2014) explain the active learning advantage in terms of the
+higher informational value of self-generated observations that take into
+account learners' own hypotheses. Importantly, the advantage for active
+learners over the yoked participants suggests that the information value
+is funamentally linked to the individual learner. Also, it is important
+to point out that an active learning advantage was only found for
+rule-based category, the simpler learning task.
 
-Together, the Castro et al. (2009) and D. B. Markant and Gureckis (2014)
-results illustrate several important points for understanding the
-effects of active learning on information value. First, the quality of
-active exploration was fundamentally linked to the learner's
-understanding of the task: if the representation was poor, then
-self-directed learning was less effective. Second, the benefits of
-active control were tied to the aspects of the individual learner --
-i.e., their prior knowledge and their current hypotheses under
-consideration -- such that the same sequence of data did not provide
-\enquote{good} information for another learner. And third, the benefits
-of active learning diminished with increased task difficulty because
-learners struggled to generate \enquote{helpful} examples. These points
-will be important for the ideas discussed in Part III of this paper when
-I outline the formalization of human active learning.
+The effects of active engagement have also been shown in studies of
+discourse understanding. Schober and Clark (1989) has pairs of adults
+complete a \enquote{tangram} task where one person (director) used
+natural language to inform another person (matcher) what order to
+arrange tangrams (geometric objects, called tans, which are put together
+to form shapes) in a 4x4 matrix. The matcher was given different levels
+of control over the conversation: (1) could actively participate (i.e.,
+talk to the director), (2) could listen to the recorded conversation of
+director-matcher and pause the tape, and (3) could listen to the entire
+conversation but not pause the tape. Results showed that active
+participants had a marked advantage as compared to overhearers.
+Interestingly, the ability to pause the tape in the passive condition
+did not help accuracy, suggesting that the active advantage is driven by
+informational value, and not just control over the timing and pacing of
+incoming information. Also, passive participants reported frustration
+with being unable to correct early failures of understanding novel
+conventions developed by the director (e.g., ``I don't know what
+\enquote{this one} means!). That is, no amount of control over timing
+can make up for lack of control of the information content in the
+overhearing conditions. Schober and Clark (1989) point out that
+conversations can be construed as active information gathering about
+other people's intentions, and when people are unable to actively
+participate, they lose access to critical information that supports
+later comprehension.
+
+Taken together, these findings on active learning illustrate several
+important points for understanding the effects of active learning on
+information value. First, the quality of active exploration was
+fundamentally linked to the learner's understanding of the task: if the
+representation was poor, then self-directed learning was less effective.
+Second, the benefits of active control were tied to the aspects of the
+individual learner -- i.e., their prior knowledge and their current
+hypotheses under consideration -- such that the same sequence of data
+did not provide \enquote{good} information for another learner. And
+third, the benefits of active learning diminished with increased task
+difficulty because learners struggled to generate \enquote{helpful}
+examples. These points will be important for the ideas discussed in Part
+III of this paper when I outline the formalization of human active
+learning.
 
 Given these considerations about the link between aspects of the learner
 (e.g., prior knowledge and understanding of the task) and the quality of
@@ -838,19 +942,17 @@ work, while the other half of children learned that only specific types
 of beads (defined by color) could make it go. Next, children were given
 the opportunity to choose between two sets of beads to make the machine
 play music: (1) a set of two beads that were stuck together or (2) a set
-of two beads that could be separated.
-
-Children who learned that only some of the beads made the machine play
-music were twice as likely to choose the separable beads to test the
-device. This suggests that children were reasoning about the amount of
-information to be gained from selecting the separable beads, which
-allowed them to test each bead independently. In contrast, the children
-who believed that all the beads worked had less information to be gained
-by picking the separable beads. This result is especially compelling
-because it provides evidence that children's were capable of reasoning
-about a decision (separable vs.~stuck together beads) that would
-influence their future opportunity to generate useful information by
-testing both beads independently.
+of two beads that could be separated. Children who learned that only
+some of the beads made the machine play music were twice as likely to
+choose the separable beads to test the device. This suggests that
+children were reasoning about the amount of information to be gained
+from selecting the separable beads, which allowed them to test each bead
+independently. In contrast, the children who believed that all the beads
+worked had less information to be gained by picking the separable beads.
+This result is especially compelling because it provides evidence that
+children's were capable of reasoning about a decision (separable
+vs.~stuck together beads) that would influence their future opportunity
+to generate useful information by testing both beads independently.
 
 Other work in the domain of causal inference shows that preschoolers
 integrate prior beliefs and evidence to alter how they explore a causal
@@ -923,7 +1025,7 @@ stream, suggesting that they might be tracking their learning progress
 and using it to decide when to stop gathering information if progress
 was sufficiently low.
 
-\subsubsection{Active contexts shape inferences and
+\subsection{Active contexts shape inferences and
 generalization}\label{active-contexts-shape-inferences-and-generalization}
 
 Active learning also changes the strength of inferences and
@@ -966,7 +1068,7 @@ sensitive to the informativeness of the sampling process. And when it
 does not convey additional information about the to-be-learned concept,
 children do not use it modify their belief updating.
 
-\subsubsection{Active learning summary}\label{active-learning-summary}
+\subsection{Active learning summary}\label{active-learning-summary}
 
 Taken together, the work on active learning reviewed in this section
 highlight several points that motivate our integrative active- social
@@ -982,11 +1084,14 @@ multitude of factors that could influence active learning, creating a
 large set of possibilities for researchers to explore.
 
 One way to approach this complexity is to define human active learning
-as a formal mathematical model. The goal two-fold. First, the model
-necessarily abstracts away some details in order to highlight general
-factors that affect active learning. Second, formal models allow
-researchers to decompose the process of active learning into separable,
-underlying components, which can become the target of research.
+using a formal mathematical model and an ideal observer analysis. TODO
+{[}add paragraph justifying ideal observer approach{]}
+
+The goals of this approach are two-fold. First, the model necessarily
+abstracts away some details in order to highlight general factors that
+affect active learning. Second, formal models allow researchers to
+decompose the process of active learning into separable, underlying
+components, which can become the target of research.
 
 Over the past two decades, researchers in both developmental and
 cognitive psychology have begun to leverage formal models of scientific
@@ -1000,13 +1105,12 @@ comparisons between people's information seeking behavior and specific
 predictions from OED models, asking when and why people deviate from
 optimal active learning behaviors.
 
-\subsection{Part III: Optimal Experiment Design as a formal account of
-active
-learning}\label{part-iii-optimal-experiment-design-as-a-formal-account-of-active-learning}
-
 \begin{figure}[tb]
-\includegraphics[width=1\linewidth]{macdonald_cada_files/figure-latex/unnamed-chunk-1-1} \caption{Schematic active learning context using the decomposition of Optimal Experiment Design. The learner generates an inquiry goal. Then she considers her hypotheses, possible queries (actions), and the potential outcomes of those actions. Together, these components quantify the expected usefullness of each action, and if the learner chooses optimally, then she picks the action that maximizes this expected utiltiy. See the OED section in the text for the mathmatical details.}\label{fig:unnamed-chunk-1}
+\includegraphics[width=0.95\linewidth]{macdonald_cada_files/figure-latex/unnamed-chunk-1-1} \caption{Schematic of an active causal learning context using the decomposition of Optimal Experiment Design. The learner generates an inquiry goal to learn how the toy works. She then considers hypotheses, including her subjective belief in each, perhaps placing more belief over the simpler, disjunctive hypotheses: only Button A or Button B. Next, she considers her possible queries (actions) and the potential outcomes if she took those actions. Together, these components quantify the expected usefullness of each action. If the learner chooses optimally, she picks the action that maximizes this expected utility. In this case, she chooses to press either Button A or B, but does not press both buttons since this action would produce confounded evidence and fail to reduce her uncertainty. See the Part III in the text for mathematical details of the OED model.}\label{fig:unnamed-chunk-1}
 \end{figure}
+
+\section{Part III: A formal account of active
+learning}\label{part-iii-a-formal-account-of-active-learning}
 
 Optimal Experiment Design (OED) (Emery \& Nenarokomov, 1998; Lindley,
 1956; Nelson, 2005) is a statisical framework that attempts to quantify
@@ -1024,25 +1128,26 @@ some pre-determined threshold of information is reached.
 
 The benefit of using the OED approach is that it allows scientists to
 make design choices that maximize the effectiveness of their
-experiments, thereby reducing inefficiency and the costs related to
-additional experimentation. Consider the following toy example borrowed
-from Ouyang, Tessler, Ly, and Goodman (2016) where an experimenter is
+experiments, reducing inefficiency and the costs related to additional
+experimentation. Consider the following toy example borrowed from
+Ouyang, Tessler, Ly, and Goodman (2016) where an experimenter is
 interested in designing the best experiment to figure out whether people
 think a coin is fair or biased (i.e., a trick coin). Here the
-researcher's hypotheses correspond to different models of the coin --
-\(M_{fair}: Bern(\frac{1}{2})\) and \(M_{bias}: Bern(p)\) where
-\(p \sim Uniform(0,1)\) -- and the experiments correspond to different
-sequences of coin flips she could select as stimuli. Imagine the
-researcher is constrained by time or resources and can only show a
-sequence defined of four coin flips, creating a space of 16 possible
-experiments. The OED framework allows the researcher to select the most
-inofrmative experiment that maximize her ability to to differentiate
-between the two hypotheses. More concretely, it provides an answer to
-the question of how much better it would be to conduct the experiment
-\(HHHH\) versus \(HTHT\). In this toy scenario, \(HHHH\) is a more
-informative experiment because the bias and fair models make the same
-predictions for the \(HTHT\) experiment, meaning we learn little about
-the hypotheses from this experiment.
+researcher's hypotheses correspond to different models of the coin
+{[}\(M_{fair}: Bern(\frac{1}{2})\){]} and {[}\(M_{bias}: Bern(p)\) where
+\(p \sim Uniform(0,1)\){]} and the experiments correspond to different
+sequences of coin flips that she could select as stimuli for the
+experiment. We can imagine that the researcher is constrained by time or
+resources and can only show a sequence of four coin flips, creating a
+space of 16 possible experiments. The value of the OED framework is that
+it allows the researcher to select the most informative experiment to
+maximize her ability to differentiate between her two hypotheses. More
+concretely, it provides an answer to the question of how much better it
+would be to do the experiment {[}\(HHHH\){]} versus {[}\(HTHT\){]}. In
+this toy example, {[}\(HHHH\){]} is a more informative because the bias
+and fair models make the same predictions for the {[}\(HTHT\){]}
+experiment, meaning the scientist would not learn much about her
+hypotheses from this experiment.
 
 An applied example comes from Nelson, McKenzie, Cottrell, and Sejnowski
 (2010). They used OED principles to differentiate competing theories of
@@ -1070,9 +1175,9 @@ Geisler, 2005).
 Coenen, Nelson, and Gureckis (2017) provide a thorough review of the OED
 framework and its links to research on the psychology of human
 information seeking. In their review, they lay out the four critical
-parts of an OED model: 1) a set of hypotheses, 2) a set of questions
-(i.e., actions) to learn about the hypotheses, 3) a way to model the
-types of answers that each question could elicit, and 4) a way to score
+parts of an OED model: (1) a set of hypotheses, (2) a set of questions
+(i.e., actions) to learn about the hypotheses, (3) a way to model the
+types of answers that each question could elicit, and (4) a way to score
 each of the possible answers with respect to some usefulness metric. In
 addition to the components internal to the model, they highlight the
 importance of understanding learners' inquiry goals (e.g., \enquote{How
@@ -1105,7 +1210,13 @@ usefulness of actions with respect to information seeking, see Nelson
 (2005). However, one common approach is to use the \emph{information
 gain} of an answer, which is defined as the change in the learner's
 overall uncertainty before and after receiving the answer. One way to
-instanstiate this idea is to compute the change in entropy\footnote{Information
+instanstiate this idea is to compute the change in entropy (i.e.,
+uncertainty) after getting a particular answer.
+
+\[P(h|a) = ent(H) - ent(H|a)\]
+
+\noindent
+Where \(ent(H)\) can be defined using Shannon entropy\footnote{Information
   entropy can be thought of as a measure of unpredictability or the
   amount of uncertainty in the learner's probability distribution over
   hypotheses. Intuitively, higher entropy distributions are more
@@ -1113,36 +1224,29 @@ instanstiate this idea is to compute the change in entropy\footnote{Information
   believes that all hypotheses are equally likely, then they are in a
   state of high uncertainty/entropy. In contrast, if the learner
   strongly believes in one the hypothses, then her uncertainty/entropy
-  is low.} (i.e., uncertainty) after getting a particular answer.
+  is low.} (MacKay, 2003), which provides a measure of the overall
+amount of uncertainty in the learner's beliefs about the candidate
+hypotheses.
 
-\[P(h|a) = ent(H) - ent(H|a)\]
-
-\noindent
-Where the prior entropy \(ent(H)\) can be defined using Shannon entropy
-(MacKay, 2003), which provides a measure of the overall amount of
-uncertainty in the learner's beliefs about the candidate hypotheses.
-
-\[ent(H) = -\sum_{h\in H}{P(h)log_2P(h)}\] \noindent
-The posterior entropy \(ent(H|a)\) is computed the same way but takes
-into account how the learner's belief distribution would change after
-getting a specific answer.
+\[ent(H) = -\sum_{a\in A}{P(h)log_2P(h)}\] \noindent
+\(ent(H|a)\) is computed the same way but takes into account how the
+learner's belief distribution would change after getting a specific
+answer.
 
 \[ ent(H|a) = -\sum_{h\in H}{P(h|a)logP(h|a)} \] \noindent
 And the likelihood of a hypothesis \(P(h|a)\) can be calculated using
 Bayes rule.
 
-\[ P(h|a) = \frac{P(h)P(a|h)}{P(a)}  \]
+\[ P(h|a) = \frac{P(h)P(a|h)}{P(a)} \]
 
 \noindent
-
 If all pieces of an OED model are defined (hypotheses, questions,
 answers, and the usefulness function), then selecting the optimal query
 is straightforward. All the learner must do is perform the expected
 utility computation for each query in the set of possible queries and
-pick the one that maximizes utility. In practice, the learner must
-consider each possible answer, score the answer with the usefulness
-function, and weight the score using the probability of getting that
-answer.
+pick the one that maximizes utility. In practice, the learner considers
+each possible answer, score the answer with the usefulness function, and
+weight the score using the probability of getting that answer.
 
 There are several benefits of the OED formalization for understanding
 human active learning. First, it forces researchers to define the
@@ -1156,21 +1260,125 @@ science) that have attempted to formalize decision-making as a process
 of utility analysis that includes the costs and benefits of choosing a
 particular behavior for information gathering.
 
-One nice demonstration of this approach comes from Nelson (2005) model
-of eye movements during novel concept learning. The model combines
-Bayesian probabilistic learning, which represents the learner's current
-knowledge as a probability distribution over a concept, with an OED
-model of the usefulness of a particular eye movement (modeled as a type
-of question-asking behavior) for gathering additional information about
-the target concept from the visual world. Together, these model
-components allowed Nelson (2005) to predict changes in the pattern of
-eye movements at different time points in the learning task.
-Specifically, they found that early in learning, when the concepts were
-unfamiliar, the model predicted a wider, less efficient distribution of
-fixations to all candidate features that could be used to categorize the
-stimulus. However, after the model learned the target concepts, eye
-movement patterns shifted, becoming more efficient and focusing on a
-single stimulus dimension.
+Before reviewing the behavioral evidence for OED-like reasoning, it is
+worth walking through a worked example of how to compute the expected
+utility of different questions. The goal is to provide simple
+calculations that illustrate the full process of reasoning about the
+probabilities of hypotheses, questions, and answers can lead to
+selecting the most useful action. This example is borrowed from Nelson
+(2005) but slightly modified. I also include code blocks that show how
+you would instantiate these calculations as functions in the R
+programming language. Imagine that the you are a biologist, and in your
+research, you come aross a new aniimal that you think belongs to one of
+two species: \enquote{glom} or \enquote{fizo.} You cannot directly query
+the category identity, but you can gather information about the presence
+or absence of two features (eats meat and is nocturnal) that you know
+from prior research are more or less prevalent for the different
+species. The following probabilities summarise this prior knowledge:
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(eatsMeat \mid glom) = 0.1\)\\
+\item
+  \(P(eatsMeat \mid fizo) = 0.9\)
+\item
+  \(P(nocturnal \mid glom) = 0.3\)\\
+\item
+  \(P(nocturnal \mid fizo) = 0.5\).
+\end{itemize}
+
+\noindent   You also know from your previous research that the prior
+probability of seeing a glom is \(P(glom) = 0.7\) and the prior
+probability of seeing a fizo is \(P(fizo) = 0.3\).
+
+Based on all of this information, which experiment should you conduct?
+Intuitively, it seems better to test whether the creature eats meat
+because an answer to this question provides strong evidence about
+whether the creature is a fizo since because
+\(P(eatsMeat \mid fizo) = 0.9\). However, the OED computation allows the
+scientist to go beyond this inuition and compute exactly how much better
+it is to ask the \enquote{eats meat?} question. To do this, all the
+scientist has to do is pass their knowledge about the hypotheses and the
+features through the expected utility computation.
+
+Here is an example of the steps of the OED computation. First, we need
+to use Bayes rule to calculate how much our beliefs would change if we
+received a \enquote{yes} or a \enquote{no} answer.\footnote{Note that
+  the \(P(eatsMeat)\) term is computed by taking
+  \(P(eatsMeat) = [P(eatsMeat \mid glom)P(glom)] + [P(eatsMeat \mid fizo)P(fizo)] = (0.1 \times 0.7) + (0.9 \times 0.3) = 0.34\)}
+
+\[ P(glom \mid eatsMeat) = \frac{P(eatsMeat \mid glom)P(glom)}{P(eatsMeat)} = \frac{0.1 \times 0.7}{0.34} = 0.21 \]
+
+\noindent
+Next, we calculate uncertainty over hypotheses before taking any actions
+by computing the prior entropy.
+
+\[
+\begin{aligned}
+ent(Species) &= -\sum_{h\in H}{P(h) \times log_2P(h)} \\
+ &= [-P(glom) \times log_2P(glom)]+[-P(fizo) \times log_2P(fizo)]\\
+ &= [-(0.7 \times log_2(0.7)] + [-(0.3 \times log_2(0.3)]\\
+ &= 0.8
+\end{aligned}
+\]
+
+\noindent
+In order to complete our information gain calculation, we need to
+calculate our uncertainty over hypotheses conditional on seeing each
+answer, or the posterior entropy. First for the \enquote{yes} answer:
+
+\[ 
+\begin{aligned}
+ent(Species|eatsMeat = yes) &= [0.21 \times log_2(0.21)] + [0.79 \times log_2(0.79)]\\
+ &= [0.21 \times log_2(0.21)] + [0.79 \times log_2(0.79)]\\
+ &=  0.15
+\end{aligned}
+\] \noindent
+And for the \enquote{no} answer:
+
+\[ 
+\begin{aligned}
+ent(Species|eatsMeat = no) &= -\sum_{a\in A}{P(Species \mid eatsMeat = no) \times log_2P(species \mid eatsMeat = no)}\\
+&= [0.95 \times log_2(0.95)] + [0.04 \times log_2(0.04)]\\
+&=  0.62
+\end{aligned}
+\] \noindent
+Finally, to get the overall information gain of the \enquote{eats meat}
+\textbf{question} we weight the utiliies of each answer by it's prior
+probability:
+
+\[ 
+\begin{aligned}
+EU(Q = eatsMeat) &= \sum_{a\in A}{P(a)U(a)} \\
+&= [P(eatsMeat = yes) \times ent(Species \mid eatsMeat = yes)] + [P(eatsMeat = no) \times ent(Species \mid eatsMeat = no)]\\
+&= [0.34 \times 0.15] + [0.66 \times log_2(0.61)]\\
+&= 0.43
+\end{aligned}
+\] If we perform the same steps to compute the expected utility of the
+sleeps at night question, we get \(EU(Q = sleepsNight) = 0.026\). So if
+the biologist wants to maximally reduce uncertainty about the species,
+she should select the \enquote{eats meat?} experiment since
+\(EU(Q = eatsMeat) > EU(sleepsNight)\).
+
+\subsubsection{Evidence of OED-like reasoning in human
+behavior}\label{evidence-of-oed-like-reasoning-in-human-behavior}
+
+One nice demonstration of the benefits of an OED approach comes from
+Nelson (2005) model of eye movements during novel concept learning. The
+model combines Bayesian probabilistic learning, which represents the
+learner's current knowledge as a probability distribution over a
+concept, with an OED model of the usefulness of a particular eye
+movement (modeled as a type of question-asking behavior) for gathering
+additional information about the target concept from the visual world.
+Together, these model components allowed Nelson (2005) to predict
+changes in the pattern of eye movements at different time points in the
+learning task. Specifically, they found that early in learning, when the
+concepts were unfamiliar, the model predicted a wider, less efficient
+distribution of fixations to all candidate features that could be used
+to categorize the stimulus. However, after the model learned the target
+concepts, eye movement patterns shifted, becoming more efficient and
+focusing on a single stimulus dimension.
 
 Recent developmental work has used OED models to test whether children
 are capable of selecting efficient behaviors that maximize learning
@@ -1216,7 +1424,7 @@ provides the building blocks for children to engage in effective
 self-directed learning.
 
 \begin{figure}[tb]
-\includegraphics[width=1\linewidth]{macdonald_cada_files/figure-latex/unnamed-chunk-2-1} \caption{Schematic of active learning within a social context.}\label{fig:unnamed-chunk-2}
+\includegraphics[width=0.95\linewidth]{macdonald_cada_files/figure-latex/unnamed-chunk-2-1} \caption{Schematic of an active word learning context using the decomposition of Optimal Experiment Design. Social input (hearing a novel word) triggers an inquiry goal. Then the learner considers potential hypotheses for candidate word-object links, weighting each hypothesis by its prior probability. In this example, the learner thinks that the new word is less likely to refer to the familiar object BALL. Next, he considers possible queries (actions) and the potential outcomes of those actions. Note that in the word learning context queries must be directed towards a social partner, providing the learner with more possible actions, both verbal (questions) and nonverbal (eye gaze; pointing). If the learner selects the action to maximize expected utility, then he would ask the most informative question, which removes all uncertainty for meaning of 'dax' -- 'What's that called?' If he does select the relatively less informative action of asking about a single object, he might be less likely to ask about the familiar object BALL since there is less information to be gained based on his prior beliefs.}\label{fig:unnamed-chunk-2}
 \end{figure}
 
 \section{Part IV: Active learning within social
@@ -1259,12 +1467,12 @@ behaviors. Might social learning accounts have something to say in
 addressing the mixed results and challenges in the self-directed
 learning literature?
 
-This section proposes one potential solution to the challenge of
-characterizing children's learning as efficient information seeking
-guided by OED principles. I take the OED model outlined in Coenen et al.
-(2017) as a starting point for defining efficient inquiry behavior, and
-use it to integrate social and active learning accounts. The benefit of
-this formal framework of self-directed learning is that it makes the
+Here, I propose one solution to the challenge of characterizing
+children's learning as efficient information seeking guided by OED
+principles. I take the OED model outlined in Coenen et al. (2017) as a
+starting point for defining efficient inquiry behavior, and use it to
+integrate social and active learning accounts. The benefit of this
+formal framework of self-directed learning is that it makes the
 different components of active learning explicit and highlights aspects
 that might be particularly challenging for young learners with limited
 cognitive resources.
@@ -1279,7 +1487,11 @@ a role. I also highlight prior work that highlight the potential for
 social contexts to shape self-directed learning and point to
 interesting, open questions that are promising areas for future work.
 
-\subsubsection{Goals}\label{goals}
+\begin{figure}[tb]
+\includegraphics[width=0.95\linewidth]{macdonald_cada_files/figure-latex/unnamed-chunk-3-1} \caption{Schematic of active learning within a social context. Each panel shows how social information could influence a different aspect of the active learning process. The panels also correspond to the different sub-sections in Part IV of the text. }\label{fig:unnamed-chunk-3}
+\end{figure}
+
+\subsection{Goals}\label{goals}
 
 An inquiry goal refers to the underlying motivation for people's
 information seeking behaviors. Often this is simply defined as a search
@@ -1335,18 +1547,18 @@ child approaches the learning task in an efficient way, selecting
 actions that are most likely to provide useful information about the
 toy's causal structure.
 
-In the previous example, we see the potential for children's
-interactions with more knowledable others to play a role in triggering
-inquiry behavior. That is, adults and older peers have the capacity to
-construct contexts with clear learning goals in order to support
-children's own information seeking. This connection draws on influential
-ideas in cognitive development that frame social learning as a form of
-scaffolding where children are placed in contexts that present something
-new to be learned but importantly conatin learning goals that are
-achieveable given children's current capabilties (e.g., Zone of Proximal
-Development (Vygotsky, 1987), Rogoff's theory of Guided Participation
-(Rogoff et al., 1993), and more recently Guided Play (Weisberg,
-Hirsh-Pasek, \& Golinkoff, 2013)).
+In the section on Social learning, I reviewed evidence that children's
+interactions with more knowledgable others could play a role in
+triggering inquiry behavior. That is, adults and older peers have the
+capacity to construct contexts with clear learning goals in order to
+support children's own information seeking. This connection draws on
+influential ideas in cognitive development that frame social learning as
+a form of scaffolding where children are placed in contexts that present
+something new to be learned but importantly conatin learning goals that
+are achieveable given children's current capabilties (e.g., Zone of
+Proximal Development (Vygotsky, 1987), Rogoff's theory of Guided
+Participation (Rogoff et al., 1993), and more recently Guided Play
+(Weisberg, Hirsh-Pasek, \& Golinkoff, 2013)).
 
 For example, Weisberg et al. (2013) define guided play as an
 intermediate learning context that falls between totally unstructured
@@ -1358,7 +1570,7 @@ in direct instruction, the more knowledgable person explicitly tells the
 learner what to do, asks questions, or demonstrates new concepts.
 
 In their review, they present the following example to illustrate the
-key difference between guided play and direct ins
+key difference between guided play and direct instruction.
 
 \begin{quote}
 For example, a teacher with the goal of teaching new vocabulary words
@@ -1381,25 +1593,79 @@ with the opportuntity for children's to exercise self-efficacy over
 learning, and leads to better learning outcomes.
 
 One less-emphasized feature of the Guided Play proposal is the
-importance of an adult initializing a clear learning goal for the
-activity. In the previous example, if we removed the adult and only
-provided the child with a storybook to explore, it is unclear what goals
-the child would pursue when deciding what actions to take. However, the
-very presence of an adult who has knowledge of the names of objects in
-the book and has the goal to teach those names to the child changes the
-potential for the child to engage in informations-seeking behaviors.
-More formally, we can connect this example to the OED framework of
-self-directed learning, and it becomes clear that one potentially
-important role of more knowledable others is to present children with a
-clear learning goal, which in turn sets the stage for children to reason
-about what actions to take next (e.g., what question to ask or what
-object to point at) and how those actions might best support the current
-learning goal (i.e., learning the names of objects in the storybook).
+importance of an adult initializing a clear learning goal. In the
+previous example, if we removed the adult and only provided the child
+with a storybook to explore, it is unclear what goals the child would
+pursue when deciding what actions to take. However, the very presence of
+an adult who has knowledge of the names of objects in the book and has
+the goal to teach those names to the child changes the potential for the
+child to engage in informations-seeking behaviors. More formally, we can
+connect this example to the OED framework of self-directed learning, and
+it becomes clear that one potentially important role of other people is
+to present children with a clear learning goal, which in turn sets the
+stage for children to reason about what actions to take next (e.g., what
+question to ask or what object to point out) and how those actions might
+best support the current learning goal (i.e., learning the names of
+objects in the storybook).
 
-Another interesting connection between social contexts and children's
-inquiry goals comes from a body of work exploring how children's input
-shapes their implicit theories of intelligence and in turn influences
-the goals they choose to pursuse in novel learning contexts (Dweck \&
+In addition to communicating inquiry goals, the mere presence of others
+can affects children's tendency to detect whether they understand
+something. This capacity for explicitly reasoning about one's own
+uncertainty is a component of metacognition and has been the focus of a
+great deal of developmental research (see Lyons and Ghetti (2010) for a
+review). The upshot of this work is that while children might be capable
+of showing behaviors that are sensitive to uncertainty (e.g.,
+selectively exploring an object with ambigous causal structure), the
+ability to have explicit access and use of the underlying representation
+of uncertainty is slower develop. There are striking experimental
+demosntrations of children's failure to monitor their own uncertainty.
+For example, Markman (1979) had elementary school aged children read
+paragraphs with inconsistent information (e.g., \enquote{fish can't see
+without light, and there's no light at the bottom of the ocean, but some
+fish at the bottom of the ocean only know their food by it's color.}).
+After reading the paragraph, children were asked a series of 10
+questions that gave them the opportunity to ask for clarification about
+the inconsistency. Overall, children were not great at the task, as
+Markman (1979) put it, \enquote{even highly motivated children were
+unable to detect inconsistencies in the incoming information.} However,
+when children were provided with a warning and \enquote{challenged to
+find a problem} with the essay, they generated more questions about the
+essay and performed better on the task.
+
+While not discussed in these terms, Markman (1979)'s \enquote{warning}
+manipulation can be reconstrued as an interevention of the social
+context on children's expectations. That is, children might approach
+social interactions with a default expectation about that adults and
+text written by adults that the information is complete and generated to
+help them learn.\footnote{See the work on children's pedagogical
+  sampling assumptions reviewed in Part 1 and the discussion of Answers
+  later in this section for additional evidence that children hold
+  default assumptions about others' helpfulness.} But when the social
+context shifts these expections, children are more likely to engage
+uncertainty monitoring, and in turn, more likely to generate inquiry
+goals.
+
+Converging evidence comes a study by Kim, Paulus, Sodian, and Proust
+(2016)\enquote{s where 3- to 4-year-olds} uncertainty monitoring was
+measured in contexts where they either did not did not have the
+expectation of communicating with another person. In the task, children
+were either knowledgable or ignorant about which toys were hidden in a
+box. In the critical \enquote{informing} condition, children asked if
+they wanted to tell another person about the contents of the box but
+they were given the opportunity to \enquote{opt-out} of responding if
+they were unsure (\enquote{Max wants to know what's inside the box. Can
+you help him? If you do not want to tell him, it's okay. I can tell
+him.}). The \enquote{explicit} condition was identical but children were
+asked to report on their own uncertainty. Intrestingly, children who
+were asked to inform another person showed higher rates of uncertainty
+monitoring, opting-out of responding more often when they did not know
+what was inside the box. These findings dovetail with work showing that
+generating explanations for other people and for ourselves is a powerful
+way to reveal inconsistencies in our own knowledge (Lombrozo, 2006).
+
+Another interesting link between social contexts and children's inquiry
+goals comes from work exploring how children's input shapes implicit
+theories of intelligence and the goals they choose to pursue (Dweck \&
 Leggett, 1988). Specifically, implicit theories of intelligence refer to
 children's internal working models of the world and provide general
 frameworks for processing information and generating predictions about
@@ -1419,14 +1685,14 @@ with a choice between one of two tasks described in the following ways:
 \begin{itemize}
 \tightlist
 \item
-  Performance task. In this box we have problems of different levels.
-  Some are hard, some are easier. If you pick this box, although you
-  won't learn new things, it will really show me what kids can do.
+  \emph{Performance task}. In this box we have problems of different
+  levels. Some are hard, some are easier. If you pick this box, although
+  you won't learn new things, it will really show me what kids can do.
 \item
-  Learning task. If you pick the task in this box, you'll probably learn
-  a lot of new things. But you'll probably make a bunch of mistakes, get
-  a little confused, maybe feel a little dumb at times --- but
-  eventually you'll learn some useful things.
+  \emph{Learning task}. If you pick the task in this box, you'll
+  probably learn a lot of new things. But you'll probably make a bunch
+  of mistakes, get a little confused, maybe feel a little dumb at times
+  --- but eventually you'll learn some useful things.
 \end{itemize}
 
 \noindent
@@ -1571,7 +1837,7 @@ of development, especially as children enter school and across different
 cultural contexts where children have differential access to structured
 (e.g., lessons and sports) vs.~unstructured activies (e.g., free play).
 
-\subsubsection{Hypotheses}\label{hypotheses}
+\subsection{Hypotheses}\label{hypotheses}
 
 After establishing that there is something to be learned, the next key
 component of inquiry is deciding what hypotheses should be considered
@@ -1579,9 +1845,9 @@ and tested. Intuitively, a hypothesis is a candidate explanation about
 how the world works. For example, if a child is in a concrete word
 learning context -- i.e., she hears a new word (\enquote{dax}) and is
 surrounded by a three unfamiliar objects (A, B, and C) -- then she might
-entertain at least\footnote{This hypothesis space only considers
-  one-to-one mappings.} the following hypotheses about the meaning of
-dax: dax = A, dax = B, or dax = C.
+entertain at least\footnote{This hypothesis space only considers the
+  possibility of one-to-one word-object mappings.} the following
+hypotheses about the meaning of dax: dax = A, dax = B, or dax = C.
 
 The set of hypotheses under consideration is critical for measuring
 effective self-directed learning. The usefulness function outlined in
@@ -1649,22 +1915,22 @@ The key difference between these proposals is how much information
 learners store in their hypothesis space. Understading the nature of the
 hypotheses that learners consider is critical for evaluating children's
 ability to seek information with respect to those hypotheses. Some of
-our own work provides direct evidence that the social context of
-language learning can modulate the content of the learner's hypothesis
-space (MacDonald, Yurovsky, \& Frank, 2017). Inspired by ideas from
-Social-pragmatic theories of language acquisition that emphasize the
-importance of social cues for word learning (P. Bloom, 2002; Clark,
-2009; Hollich et al., 2000), we showed adults a series of word learning
-contexts that varied in ambiguity depending on whether there was a
-useful social cue to reference (i.e., a gaze cue). We then measured
-learners' memory for alternative word-object links at different levels
-of attention and memory demands. Results showed that learners flexibly
-responded to the amount of ambiguity in the input, and as uncertainty
-increased, learners tended to store more word-object links. Morever, we
-found that learners stored representations with different levels of
-fidelity as a function of the reliability of the social cue and despite
-having the same amount of time to visually explore the objects during
-the initial labeling event.
+our own work provides evidence that the social context can modulate the
+content of the learner's hypothesis space (MacDonald, Yurovsky, \&
+Frank, 2017). Inspired by ideas from Social-pragmatic theories of
+language acquisition that emphasize the importance of social cues for
+word learning (P. Bloom, 2002; E. V. Clark, 2009; Hollich et al., 2000),
+we showed adults a series of word learning contexts that varied in
+ambiguity depending on whether there was a useful social cue to
+reference (i.e., a gaze cue). We then measured learners' memory for
+alternative word-object links at different levels of attention and
+memory demands. Results showed that learners flexibly responded to the
+amount of ambiguity in the input, and as uncertainty increased, learners
+tended to store more word-object links. Morever, we found that learners
+stored representations with different levels of fidelity as a function
+of the reliability of the social cue and despite having the same amount
+of time to visually explore the objects during the initial labeling
+event.
 
 These results suggest that the content of learners' hypothesis spaces
 changed as a function of the quality of the social learning context.
@@ -1723,7 +1989,7 @@ save them from poor choices.
 \end{quote}
 
 \noindent
-This makes an interesting, testable prediction that contexts where
+This makes an interesting, testable prediction that contexts in which
 learners \enquote{feel} safe to make mistakes would lead children to
 consider and test a broader range of hypotheses. Moreover, another
 effect of the social context is highlighted in Lucas et al. (2014)'s
@@ -1735,21 +2001,22 @@ question as to how often this type of process occurs in everyday
 learning contexts.
 
 A final case study demonstrating the link between social input and
-children's hypotheses comes from research on conceptual change (Gelman,
-2009). Conceptual change refers to a \enquote{radical} reconstruction of
-an intuitive theory about how the world works based on some intervening
-factor. For example, elementary school-aged children tend to hold a
-mixture of beliefs about the shape of the earth (Vosniadou \& Brewer,
-1992). These theories range from flat earth theories that match
-children's everyday perceptual experiences (i.e., walking on flat
-ground) to the adult-like, sphere model, which must have been learned
-via social input. Intrestingly, children also show evidence of holding
-interemtidate beliefs such as a dual-earth theory where there are two
-earths, \enquote{a round one which is up in the sky and a flat one where
-people live} (p.~550). The fact that children entertain something like
-the dual-earth theory suggests that they are actively trying to
-integrate their initial theory with information they get from
-interactions with people who already have the correct, sphere theory.
+children's hypotheses comes from research on conceptual change during
+early childhood (Gelman, 2009). Conceptual change refers to a
+\enquote{radical} reconstruction of an intuitive theory about how the
+world works based on some intervening factor. For example, elementary
+school-aged children tend to hold a mixture of beliefs about the shape
+of the earth (Vosniadou \& Brewer, 1992). These theories range from flat
+earth theories that match children's everyday perceptual experiences
+(i.e., walking on flat ground) to the adult-like, sphere model, which
+must have been learned via social input. Intrestingly, children also
+show evidence of holding interemtidate beliefs such as a dual-earth
+theory where there are two earths, \enquote{a round one which is up in
+the sky and a flat one where people live} (p.~550). The fact that
+children entertain something like the dual-earth theory suggests that
+they are actively trying to integrate their initial theory with
+information they get from interactions with people who already have the
+correct, sphere theory.
 
 There is also strong experimental evidence for the importance of social
 input in children's theory revision. For example, in the domain of
@@ -1768,15 +2035,14 @@ in the goal-directed movement condition showed the strongest evidence
 theory revision, saying plants were also living things more consistently
 on a post-intervention categorization task.
 
-Additional evidence for the role of social input on children's
-hypotheses comes from research on the links between language experience
-and performance on various cognitive tasks. For example, empirical work
-has shown that deaf children without access to a natural language
-perform worse on Theory of Mind tasks (Peterson \& Siegal, 2000), that
-Korean speakers perform better than English speakers on tasks that
-require categorizing based on tight vs.~loose distinctions, which are
-lexicalized in Korean (McDonough, Choi, \& Mandler, 2003), and that
-exposure to a first language reduces infants' capacity to detect
+Additional evidence comes from research on the links between language
+experience and performance on various cognitive tasks. For example,
+empirical work has shown that deaf children without access to a natural
+language perform worse on Theory of Mind tasks (Peterson \& Siegal,
+2000), that Korean speakers perform better than English speakers on
+tasks that require categorizing based on tight vs.~loose distinctions,
+which are lexicalized in Korean (McDonough, Choi, \& Mandler, 2003), and
+that exposure to a first language reduces infants' capacity to detect
 non-native phonetic contrasts (Maurer \& Werker, 2014).
 
 Taken together, the findings reviewed in this section illustate several
@@ -1803,9 +2069,7 @@ change and language effects reviewed above).\footnote{We could make a
   evoluationary history (e.g., access to natural language or concepts
   such as the spherecial earth.)}
 
-TODO: paragraph about open questions for hypotheses.
-
-\subsubsection{Questions}\label{questions}
+\subsection{Questions}\label{questions}
 
 Questions in the OED framework refer to the experiments that a scientist
 can conduct in order to gather information with respect to their
@@ -1930,9 +2194,10 @@ abilities by providing templates for useful behaviors.
 Generating a set of questions represents the first step in efficient
 information seeking. Next, children have to evaluate the relative
 \enquote{goodness} (i.e., utility) of different behaviors. But how do
-children learn the features of a good question? One solution is to
-observe other people's question asking, recognize which questions are
-useful, and imitate those behaviors.
+children learn the features of a good question? One solution is for
+children to observe other people's question asking behaviors, recognize
+which questions are useful, and leverage their imitation skills to model
+those behaviors.
 
 In fact, there is evidence from work with adults that shows a large
 difference between people's question-generating (harder) and
@@ -1968,15 +2233,15 @@ differentiated the usefulness of others' question-answer exchanges,
 paying more attention to them as compared to exchanges of irrelevant
 information.
 
-Together, these results suggest that even at an age where generating
-questions \enquote{from scratch} might be difficult, children can
-observe and learn from questions that occur in their social environment.
-Mills et al. (2011) also explored this phenomenon by directly
-manipulating whether children were exposed to a training phase where
-adults modeled effective questions prior to playing the question asking
-game. They found that even though children were not successful at
-constructing good questions on their own, they were able to ask
-effective questions at much higher rate following explicit modeling.
+These results suggest that even at an age where generating questions
+\enquote{from scratch} might be difficult, children can observe and
+learn from questions that occur in their social environment. Mills et
+al. (2011) also explored this phenomenon by directly manipulating
+whether children were exposed to a training phase where adults modeled
+effective questions prior to playing the question asking game. They
+found that even though children were not successful at constructing good
+questions on their own, they were able to ask effective questions at
+much higher rate following explicit modeling.
 
 Work with elementary-school-aged children in the domain of scientific
 inquiry also shows that generating a good question is a challenging
@@ -1988,26 +2253,29 @@ older students who had not participated in the training. Children in the
 training group showed progress in the skills, but children in the
 comparison group failed to develop these skills in the absence of the
 particular kinds of input. Summarizing one of the key results,
-\textgreater{} Consistent with the findings of Kuhn and Dean (2005),
-identifying a question appears to play a key role in making the rest of
-the inquiry cycle productive. In the probabilistic version of Ocean
-Voyage in year 2, for example, students floundered until they were
-helped to formulate a specific research question. Like other components
-of the inquiry process, this skill is not one a student learns once and
-has mastered.
+
+\begin{quote}
+Consistent with the findings of Kuhn and Dean (2005), identifying a
+question appears to play a key role in making the rest of the inquiry
+cycle productive. In the probabilistic version of Ocean Voyage in year
+2, for example, students floundered until they were helped to formulate
+a specific research question. Like other components of the inquiry
+process, this skill is not one a student learns once and has mastered.
+\end{quote}
 
 \noindent
 A final example of how social contexts change the set of possible
 questions is the very fact of having other people around adds a social
-\enquote{target} for information seeking behaviors. This is in contrast
-to the effects of social context discussed until this point that serve
-as inputs that shape subsequent information seeking behaviors.
-Intuitively, if a child is trying to learn how a toy works, they could
-try actions to test the system directly (i.e., seek information directly
-from the world). But if another perosn is present, then they can choose
-to ask questions or seek help via noverbal means (i.e., seek information
-directly from another person). Thus, the very presence of another person
-modifies the choices that are available to the learner.
+\enquote{target} for information seeking behaviors. This differs from
+the effects of social context discussed until this point where in those
+examples the social input shaped subsequent information seeking
+behaviors. Intuitively, if a child is trying to learn how a toy works,
+they could try actions to test the system directly (i.e., seek
+information directly from the world). But if another person is present,
+then they can choose to ask questions or seek help via noverbal means
+(i.e., seek information directly from other agents). Thus, the mere
+presence of another person modifies the queries that are available to
+the learner.
 
 Recent empirical work has begun to explore the factors that affect
 children's decisions about whether to seek information from the world or
@@ -2016,14 +2284,34 @@ to 6-year-old children decide how toto learn about a novel social
 category: \enquote{moozles.} The concept was either visible (e.g., the
 color of hair) or invisible (e.g., an internal preference). Children
 were given a choice of looking directly at the moozle or asking a moozle
-expert. Six-year-olds chose to look for a visible property and to ask
-for an invisible property above chance in both experiments; whereas
-four-year-olds behavior was a bit noisier but showed a preference for
-the rational looking behavior with additional cueing in a follow-up
-experiment.
+expert. Six-year-olds were more likely to select the \enquote{look}
+option for a visible property and to select the \enquote{ask} option for
+an invisible property. Four-year-olds behavior was a bit noisier but
+also showed a preference for the correct information gathering behavior
+with some additional scaffolding from the experimenter. These results
+provide preliminary evidence that children have some meta-understanding
+of the kinds of information that is particulary good to learn from
+social partners. Additional evidence comes from work by Lockhart, Goddu,
+Smith, and Keil (2016) where they demonstrated that 5- to 11-year-old
+children are able to articulate the kinds of information that a person
+could learn growing up on their own (e.g., that the sky is blue)
+compared to the kinds of information that require other people (e.g.,
+that the earth is round).
+
+It is important to note out that the items in this study did not test
+children's appreciation for more indirect forms of social learning: that
+is, in order to learn that the sky is blue relies on having a
+conventional language system for referring to concepts. Gelman (2009)
+refers to this as a \enquote{a hidden level of cultural input} (p.~2).
+The key point is that even in learning contexts that appear entirely
+self-directed, children's decision making processes have already been
+shaped by massive amounts of prior experience with other people. With
+that said, this evidence suggests that children are relatively skilled
+at deciding when to direct their information seeking behaviors towards
+social partners.
 
 Other relevant examples comes from work on children's help-seeking
-behavior. Vredenburgh and Kushnir (2016) had children build toys that
+behaviors. Vredenburgh and Kushnir (2016) had children build toys that
 required multiple steps, and on each each step children were given the
 opportunity to ask for help from the experimenter. Each step varied in
 difficulty and children naturally varied in their toy building skill.
@@ -2043,8 +2331,29 @@ contrast, when the evidence suggested that the child was the issue, then
 they sought help from a nearby adult.
 
 Some of our own work has explored how the presence of another person
-might change the dynamics of children's decisions about where to look
-during familiar language comprehension.
+changes the set of information seeking behviors available to the learner
+(MacDonald, Blonder, Marchman, Fernald, \& Frank, 2017). Specifically,
+we proposed an information seeking account of eye movements in grounded
+spoken and signed language comprehension: that fixations to a speaker
+can provide valuable information with respect to the goal of rapid
+language understanding. We tested our information-seeking account using
+three case studies that manipulated the value of different fixation
+behaviors in the visual world: (1) a comparison of processing a
+visual-manual vs.~a spoken language in children, (2) a comparison of
+processing printed text vs.~spoken language in adults, and (3) a
+comparison of processing degraded vs.~clear speech. We found that,
+compared to English-learners, young signers delayed their gaze shifts
+away from a language source, were more accurate with these shifts, and
+produced a smaller proportion of nonlanguage-driven shifts. These
+results suggest that the signers were sensitive to the higher value of
+seeking visual information from the signer.English-speaking adults
+produced fewer nonlanguage-driven shifts when processing printed text
+compared to spoken language. And English-speaking children and adults
+allocated more fixations to a speaker and achieved higher language
+recognition accuracy when processing degraded speech. Together, these
+data provide a compelling evidence that listeners adapt to the value of
+seeking visual information from social targets in order to increase the
+chance of rapid and accurate language understanding.
 
 In sum, the set of questions that children consider provide the tools in
 their information seeking toolkit. However, we need more research to
@@ -2056,7 +2365,7 @@ Moreover, social contexts fundamentally change the set of behaviors that
 are available to the developing learner by providing a social target for
 information seeking behaviors.
 
-\subsubsection{Answers}\label{answers}
+\subsection{Answers}\label{answers}
 
 Answers in the OED framework refer to the information that learners
 receive after asking a question. There are two components that influence
@@ -2132,16 +2441,16 @@ opposed the location in space, if their attention was directed to the
 object via a communicative signal such as a pointing gesture (J. M. Yoon
 et al., 2008).
 
-However, even if the learner is in a social context where the default
-assumption might be that information is useful and generalizable, not
-all answers are created equal. Thus, a challenge for selecting
-information seeking behaviors is to evaluate possible answers and figure
-out how much a particular piece of information should update beliefs.
-This is perhaps one of the more-developed areas of research in terms of
-connecting features of the social context to self-directed learning.
-Specifically, researchers have made progress in modeling the influence
-of different assumptions that a learner could about the generative
-process of answers on the strength of learners' belief change.
+Even if the learner is in a social context where the default assumption
+might be that information is useful and generalizable, not all answers
+are created equal. Thus, a challenge for selecting information seeking
+behaviors is to evaluate possible answers and figure out how much a
+particular piece of information should update beliefs. This is perhaps
+one of the more-developed areas of research in terms of connecting
+features of the social context to self-directed learning. Specifically,
+researchers have made progress in modeling the influence of different
+assumptions that a learner could about the generative process of answers
+on the strength of learners' belief change.
 
 For example, Shafto et al. (2012b) lay out a continuum of different
 assumptions that a learner could make about the process that generated
@@ -2176,24 +2485,25 @@ Empirical support for the pedagogical sampling account comes from a
 range of domains/tasks, including word learning (Frank et al., 2009),
 pragmatic inference (Frank \& Goodman, 2012), and causal reasoning (E.
 Bonawitz et al., 2011) (see the section on inferences and generalization
-in Part I). We can also revisit these findings as connect them directly
-to specific components of the OED model of human inquiry. Consider Xu
-and Tenenbaum (2007a) finding: that learners are \enquote{sensitive} to
-the sampling process that generated the examples and when there was good
-reason to think that the examples were linked to the word meaning, i.e.,
-because they were selected by a knowledgable teacher, then it would be
-surprising to have seen three examples drawn from the smaller
-subordinate category. Formally, sensitivity to sampling assumptions was
-modeled as taking different forms of the likelihood function in a
-Bayesian cognitive model: \(p(x_i \mid m) \propto p(l_i \mid o_i, m)\).
-Intuitively, this can be thought of as the probability of seeing a
-particular label (\(l_i\)) given a specific object (\(o_i\)) and word
-meaning (\(m\)). In this case, the likelihood function for the
-teacher-driven condition was designed to capture the idea that learners
-prefer \enquote{smaller} or more restrictive hypotheses if they are
-confident that the data were generated from the true word meaning.
+in social learning Part I). We can also revisit these findings and
+connect them directly to specific components of the OED model of human
+inquiry. Consider Xu and Tenenbaum (2007a) finding: that learners are
+\enquote{sensitive} to the sampling process that generated the examples
+and when there was good reason to think that the examples were linked to
+the word meaning, i.e., because they were selected by a knowledgable
+teacher, then it would be surprising to have seen three examples drawn
+from the smaller subordinate category. Formally, sensitivity to sampling
+assumptions was modeled as taking different forms of the likelihood
+function in a Bayesian cognitive model:
+\(p(x_i \mid m) \propto p(l_i \mid o_i, m)\). Intuitively, this can be
+thought of as the probability of seeing a particular label (\(l_i\))
+given a specific object (\(o_i\)) and word meaning (\(m\)). In this
+case, the likelihood function for the teacher-driven condition was
+designed to capture the idea that learners prefer \enquote{smaller} or
+more restrictive hypotheses if they are confident that the data were
+generated from the true word meaning.
 
-This formalization makes for a nice connection with the OED model of
+This formalization provies a direct connection with the OED model of
 human inquiry. Specifically, when a learner is simulating the possible
 answers that she could receive, she considers how much each answer will
 update her beliefs. This reasoning process is modeled by computing the
@@ -2201,7 +2511,7 @@ difference between the learner's prior and posterior uncertainty (i.e.,
 entropy): \(P(h|a) = ent(H) - ent(H|a)\). The learners' sampling
 assumptions naturally enter the information seeking calculus through the
 posterior entropy term \(ent(H|a) = -\sum_{h\in H}{P(h|a)logP(h|a)}\).
-Intiutively, this part of the model captures the idea that not all
+Intuitively, this part of the model captures the idea that not all
 answers are equally useful, and answers that are linked to the correct
 hypothesis and generated for you are more likely to be informative and
 should lead to a stronger change in beliefs.
@@ -2222,7 +2532,7 @@ Harris, 2004).
 For example, empirical work shows that preschoolers track and integrate
 a speaker's prior instances of accuracy to figure out if they are
 trustworthy and will use this information to guide subsequent learning
-from that speaker's future claims (Koenig et al., 2004). In typical
+from that speaker's future claims (Koenig et al., 2004). In these
 studies, children evaluate a speaker's current testimony after the
 speaker establishes a record of reliability or unreliability by labeling
 or mislabeling familiar objects. Across these studies, preschoolers are
@@ -2237,28 +2547,44 @@ Harris, 2009), adults over peers (Rakoczy, Hamann, Warneken, \&
 Tomasello, 2010), and ingroup over outgroup members (MacDonald, Schug,
 Chase, \& Barth, 2013).
 
-The key insight of the selective learning literature is that children
-are not totally incredulous when processing information. Instead, the
-evdience suggests that they actively reason about the expertise that
+Converging evidence comes from Gweon, Pelton, Konopka, and Schulz (2014)
+work on children's exploration behavior after seeing pedagogical
+demonstrations of varying quality. In this study, children played with
+toys that either had one of four functions (e.g., spinning globe or
+flashing light) until they independently discovered the correct number
+of functions. Then, depending on condition assignment, they saw a puppet
+teach one or four of the novel functions to another puppet. Finally, the
+puppet teacher introduced a new toy to the participant and demonstrated
+a single novel function. Critically, when the puppet teacher had left
+out information in the previous teaching episode (only demonstrating one
+out of four novel functions), children spent more time exploring the
+object functions that the teacher did not demonstrate. That is, when the
+teacher was under-informative, children did not make the strong
+inference that there were no other functions to discover.
+
+The key insight from the selective learning literature is that children
+are not entirely incredulous when they encounter information. Instead,
+the evidence suggests that they actively reason about the expertise that
 another person brings to the learning context and will choose to ignore
-information that they deem unreliable. Intrestingly, one of the common
-outcome measures in the selective learning literature is children's
-decisions about whom to direct questions towards. This maps direclty
-onto a key component of the OED model of human inquiry behavior and
-suggests that children might be considering the expected usefulness of
-another person's answers when they make a decision about whether to
-gather information.
+information that they deem unreliable. Intrestingly, common outcome
+measures in studies of selective learning are children's
+informationg-gathering decisions, e.g., whom to direct questions towards
+and how many actions to take on an object. These behaviors maps directly
+onto the choices that the OED model of human inquiry is trying to
+explain and suggests that children consider the expected usefulness of
+others' answers deciding to gather information.
 
 Similar to the pedagogical reasoning effects, the selective learning
-phenomena have also been modeled as modifications to learners'
-assumptions about the generative process of answers. Shafto et al.
-(2012a) propose that selective learning in these object labeling
-scenarios can be explained as children reasoning about both the
-helpfulness and knowledgability of speakers when they produce a given
-label, \(l\). Here the child's goal is to select a speaker that
-increases the chance that they get good information that matches the
-true state of the world (\(label=correct\)). Formally, they specify this
-likelihood function as:
+phenomena have also been modeled using modifications to the likelihood
+function in a Bayesian cognitive model. Again, this maps onto a
+hypothesis about the assumptions that learners make about how answers
+are generated. For example, Shafto et al. (2012a) propose that selective
+learning in these object labeling scenarios can be explained as children
+reasoning about both the helpfulness and knowledgability of speakers
+when they produce a given label, \(l\). Here the child's goal is to
+select a speaker that increases the chance that they get good
+information that matches the true state of the world
+(\(label=correct\)). Formally, they specify this likelihood function as:
 
 \[P(l \mid s,k,h) = \sum_b P(l \mid b,h)P(b \mid k,s)\] This captures
 the idea that the probability of a label depends on the true state of
@@ -2296,20 +2622,18 @@ be interesting to merge these cost-based approaches with ideas from
 social learning theory to increase our understanding of how social
 contexts can also modify the costs of different behaviors.
 
-TODO: summary paragraph for answers
-
-\subsubsection{Stopping rules}\label{stopping-rules}
+\subsection{Stopping rules}\label{stopping-rules}
 
 When should we stop collecting information and make a decision? A
 stopping rule describes an information or time-based threshold that if
 crossed causes people to end information seeking and generate a
 behavior. The concept draws on ideas from probability theory that have
 been used to model how random variables change as a function of time.
-For example, when doing research to write a paper, a student might
-generate the time-based stopping rule: read for two hours and then start
-writing. The goal of an efficient learner is to figure out a stopping
-rule that maximizes the chance of achieving a learning goal while
-reducing the amount of extra time or effort put into the task.
+For example, when conducting research for writing a paper, a student
+might generate the time-based stopping rule: read for two hours and then
+start writing. The goal of an efficient learner is to figure out a
+stopping rule that maximizes the chance of achieving a learning goal
+while reducing the amount of extra time or effort put into the task.
 
 Studies of children's information seeking have largely focused on
 measuring whether children presist in seeking information if their
@@ -2383,7 +2707,7 @@ gathering threshold in the face of new, negative evidence.
 The opposite effect of pedagogy on children's stopping rules across
 these two studies might seem like a puzzle. However, they are both
 driven by the power of socially transmitted information to be more
-informative and result in stronger inferences. In the causal learning
+informative and lead to stronger inferences. In the causal learning
 case, the stronger inference about the lack of alternative
 object-functions results in less exploration, but in the inductive
 inference case, the stronger inference about the generalizability of the
@@ -2393,7 +2717,10 @@ that information seeking decisions can be altered by features of the
 immediate social context and by the way information was acquired from
 previous social interactions.
 
-TODO: summary paragraph about stopping rules.
+Exploring the factors that influence children's decisions to stop
+gathering information is a promising area for future research. TOD (talk
+about work with adults -- Juni/time horizon stuff/naive utility
+calculus)
 
 \section{Conclusions}\label{conclusions}
 
@@ -2778,6 +3105,11 @@ Psychological Science}, \emph{7}(5), 464--481.
 Gweon, H., \& Schulz, L. (2011). 16-month-olds rationally infer causes
 of failed actions. \emph{Science}, \emph{332}(6037), 1524--1524.
 
+\hypertarget{ref-gweon2014sins}{}
+Gweon, H., Pelton, H., Konopka, J. A., \& Schulz, L. E. (2014). Sins of
+omission: Children selectively explore when teachers are
+under-informative. \emph{Cognition}, \emph{132}(3), 335--341.
+
 \hypertarget{ref-haertel2008return}{}
 Haertel, R. A., Seppi, K. D., Ringger, E. K., \& Carroll, J. L. (2008).
 Return on investment for active learning. In \emph{Proceedings of the
@@ -2821,6 +3153,11 @@ e36399.
 Kidd, C., Piantadosi, S. T., \& Aslin, R. N. (2014). The goldilocks
 effect in infant auditory attention. \emph{Child Development},
 \emph{85}(5), 1795--1804.
+
+\hypertarget{ref-kim2016young}{}
+Kim, S., Paulus, M., Sodian, B., \& Proust, J. (2016). Young children's
+sensitivity to their own ignorance in informing others. \emph{PloS One},
+\emph{11}(3), e0152595.
 
 \hypertarget{ref-kishimoto2007pointing}{}
 Kishimoto, T., Shizawa, Y., Yasuda, J., Hinobayashi, T., \& Minami, T.
@@ -2872,6 +3209,12 @@ early childhood. \emph{Journal of Experimental Child Psychology},
 Lindley, D. V. (1956). On a measure of the information provided by an
 experiment. \emph{The Annals of Mathematical Statistics}, 986--1005.
 
+\hypertarget{ref-lockhart2016could}{}
+Lockhart, K. L., Goddu, M. K., Smith, E. D., \& Keil, F. C. (2016). What
+could you really learn on your own?: Understanding the epistemic
+limitations of knowledge acquisition. \emph{Child Development},
+\emph{87}(2), 477--493.
+
 \hypertarget{ref-lombrozo2006structure}{}
 Lombrozo, T. (2006). The structure and function of explanations.
 \emph{Trends in Cognitive Sciences}, \emph{10}(10), 464--470.
@@ -2881,6 +3224,17 @@ Lucas, C. G., Bridgers, S., Griffiths, T. L., \& Gopnik, A. (2014). When
 children are better (or at least more open-minded) learners than adults:
 Developmental differences in learning the forms of causal relationships.
 \emph{Cognition}, \emph{131}(2), 284--299.
+
+\hypertarget{ref-lyons2010metacognitive}{}
+Lyons, K. E., \& Ghetti, S. (2010). Metacognitive development in early
+childhood: New questions about old assumptions. In \emph{Trends and
+prospects in metacognition research} (pp. 259--278). Springer.
+
+\hypertarget{ref-macdonald2017info}{}
+MacDonald, K., Blonder, A., Marchman, V. and, Fernald, A., \& Frank, M.
+C. (2017). An information-seeking account of eye movements during spoken
+and signed language comprehension. In \emph{Proceedings of the 39th
+annual conference of the cognitive science society}.
 
 \hypertarget{ref-macdonald2013my}{}
 MacDonald, K., Schug, M., Chase, E., \& Barth, H. (2013). My people,
@@ -2910,6 +3264,11 @@ Education}, \emph{10}(3), 142--152.
 Markant, D., DuBrow, S., Davachi, L., \& Gureckis, T. M. (2014).
 Deconstructing the effect of self-directed study on episodic memory.
 \emph{Memory \& Cognition}, \emph{42}(8), 1211--1224.
+
+\hypertarget{ref-markman1979realizing}{}
+Markman, E. M. (1979). Realizing that you don't understand: Elementary
+school children's awareness of inconsistencies. \emph{Child
+Development}, 643--655.
 
 \hypertarget{ref-maurer2014perceptual}{}
 Maurer, D., \& Werker, J. F. (2014). Perceptual narrowing during
@@ -3002,7 +3361,7 @@ Preprint arXiv:1608.05046}.
 Partridge, E., McGovern, M. G., Yung, A., \& Kidd, C. (2015). Young
 children's self-directed information gathering on touchscreens. In
 \emph{Proceedings of the 37th annual conference of the cognitive science
-society, austin, tx. cognitive science society}.
+society}.
 
 \hypertarget{ref-pea1982origins}{}
 Pea, R. D. (1982). Origins of verbal logic: Spontaneous denials by
@@ -3052,7 +3411,8 @@ Socially contingent interactions help toddlers learn language.
 
 \hypertarget{ref-rothe2015asking}{}
 Rothe, A., Lake, B. M., \& Gureckis, T. M. (2015). Asking useful
-questions: Active learning with rich queries. In \emph{CogSci}.
+questions: Active learning with rich queries. In \emph{Proceedings of
+the 36th annual conference of the cognitive science society}.
 
 \hypertarget{ref-rowe2009early}{}
 Rowe, M. L., \& Goldin-Meadow, S. (2009). Early gesture selectively
@@ -3072,12 +3432,16 @@ achieve efficient search. \emph{Cognition}, \emph{143}, 203--216.
 Ruggeri, A., Markant, D. B., Gureckis, T. M., \& Xu, F. (2016). Active
 control of study leads to improved recognition memory in children. In
 \emph{Proceedings of the 38th annual conference of the cognitive science
-society. austin, tx: Cognitive science society}.
+society}.
 
 \hypertarget{ref-sage2011disentangling}{}
 Sage, K. D., \& Baldwin, D. (2011). Disentangling the social and the
 pedagogical in infants' learning about tool-use. \emph{Social
 Development}, \emph{20}(4), 825--844.
+
+\hypertarget{ref-schober1989understanding}{}
+Schober, M. F., \& Clark, H. H. (1989). Understanding by addressees and
+overhearers. \emph{Cognitive Psychology}, \emph{21}(2), 211--232.
 
 \hypertarget{ref-schulz2012origins}{}
 Schulz, L. (2012). The origins of inquiry: Inductive inference and
@@ -3198,7 +3562,8 @@ inference. \emph{Psychological Review}, \emph{114}(2), 245.
 \hypertarget{ref-yoonwon}{}
 Yoon, E. J., Tessler, G., Michael Henry, \& Frank, M. C. (2017). ``I
 won't lie, it wasn't amazing'': Modeling polite indirect speech. In
-\emph{CogSci}.
+\emph{Proceedings of the 39th annual conference of the cognitive science
+society}.
 
 \hypertarget{ref-yoon2008communication}{}
 Yoon, J. M., Johnson, M. H., \& Csibra, G. (2008). Communication-induced
@@ -3241,6 +3606,194 @@ intention in early lexical acquisition. \emph{Cognitive Science},
 \hypertarget{ref-yurovsky2014algorithmic}{}
 Yurovsky, D., \& Frank, M. C. (2015). An integrative account of
 constraints on cross-situational learning. \emph{Cognition}.
+
+\newpage
+
+\section{Appendix}\label{appendix}
+
+\setlength{\parindent}{0in} \setlength{\leftskip}{0in}
+
+R code to implement the worked example of OED presented in Part 3.
+First, we define some functions to make the computation of conditional
+probability, entropy, and information gain easier.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# bayes rule to compute conditional probability}
+\NormalTok{compute_bayes <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(prior_a, }
+\NormalTok{                          prior_b, }
+\NormalTok{                          likelihood) \{}
+\NormalTok{  (prior_a }\OperatorTok{*}\StringTok{ }\NormalTok{likelihood) }\OperatorTok{/}\StringTok{ }\NormalTok{prior_b}
+\NormalTok{\}}
+
+\CommentTok{# entropy functions}
+\NormalTok{compute_symbol_ent <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(probability) \{}
+  \ControlFlowTok{if}\NormalTok{(probability }\OperatorTok{==}\StringTok{ }\DecValTok{0}\NormalTok{) \{}
+    \DecValTok{0}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{    (probability }\OperatorTok{*}\StringTok{ }\KeywordTok{log2}\NormalTok{(probability)) }\OperatorTok{*}\StringTok{ }\OperatorTok{-}\DecValTok{1}  
+\NormalTok{  \}}
+\NormalTok{\}}
+
+\NormalTok{compute_entropy <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(probability_vector) \{}
+  \KeywordTok{sapply}\NormalTok{(probability_vector, compute_symbol_ent) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{sum}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{round}\NormalTok{(}\DataTypeTok{digits =} \DecValTok{2}\NormalTok{)}
+\NormalTok{\}}
+
+\CommentTok{# compute intormation gain of a single answer}
+\NormalTok{compute_utility_answer <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(prior_entropy, }
+\NormalTok{                                   posterior_entropy) \{}
+\NormalTok{  prior_entropy }\OperatorTok{-}\StringTok{ }\NormalTok{posterior_entropy }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{round}\NormalTok{(}\DataTypeTok{digits =} \DecValTok{2}\NormalTok{)}
+\NormalTok{\}}
+
+\CommentTok{# compute intormation gain of a question}
+\NormalTok{compute_utility_question <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(prior_entropy, }
+\NormalTok{                                     utility_answers, }
+\NormalTok{                                     probability_answers) \{}
+\NormalTok{  posterior_entropy <-}\StringTok{ }\NormalTok{(utility_answers }\OperatorTok{*}\StringTok{ }\NormalTok{probability_answers) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{sum}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{round}\NormalTok{(}\DataTypeTok{digits =} \DecValTok{2}\NormalTok{)}
+\NormalTok{  prior_entropy }\OperatorTok{-}\StringTok{ }\NormalTok{posterior_entropy}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Next, we instantiate our prior knowledge of the world as global
+variables that will get passed to the expected utility functions.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# prior probabilities of species}
+\NormalTok{prior_prob_glom <-}\StringTok{ }\FloatTok{0.7}
+\NormalTok{prior_prob_fizo <-}\StringTok{ }\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prior_prob_glom}
+
+\CommentTok{# conditional probabilities of features for each species}
+\NormalTok{prob_meat_glom <-}\StringTok{ }\FloatTok{0.1}
+\NormalTok{prob_meat_fizo <-}\StringTok{ }\FloatTok{0.9}
+\NormalTok{prob_nocturnal_glom <-}\StringTok{ }\FloatTok{0.3}
+\NormalTok{prob_nocturnal_fizo <-}\StringTok{ }\FloatTok{0.5}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent
+Next, we use Bayes rule to compute how much our beliefs would change if
+we saw evidence of eating meat. To do
+
+\[
+\begin{aligned}
+P(glom \mid eatsMeat) &= \frac{P(eatsMeat \mid glom)P(glom)}{P(eatsMeat)},\\
+where,\\
+P(eatsMeat) &= [P(eatsMeat \mid glom)P(glom)] + [P(eatsMeat \mid fizo)P(fizo)]
+\end{aligned}
+\]
+
+\noindent
+In R code, we compute the prior probability of the presence and absence
+of the \enquote{eats meat} feature as:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# compute probability of the presence of eating meat}
+\NormalTok{prob_meat <-}\StringTok{ }\NormalTok{(prob_meat_glom }\OperatorTok{*}\StringTok{ }\NormalTok{prior_prob_glom) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\NormalTok{(prob_meat_fizo }\OperatorTok{*}\StringTok{ }\NormalTok{prior_prob_fizo)}
+
+\CommentTok{# compute probability of the absence of eating meat}
+\NormalTok{prob_notMeat <-}\StringTok{ }\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent
+Next, we use Bayes rule to compute the change in beliefs about species
+if we observed the creature eating meat.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# use bayes rule to compute conditional probability that glom }
+\CommentTok{# given that eats meat answer is yes}
+\NormalTok{cond_prob_glom_meat <-}\StringTok{ }\KeywordTok{compute_bayes}\NormalTok{(}\DataTypeTok{prior_a =}\NormalTok{ prior_prob_glom, }
+                                     \DataTypeTok{prior_b =}\NormalTok{ prob_meat, }
+                                     \DataTypeTok{likelihood =}\NormalTok{ prob_meat_glom)}
+
+\CommentTok{# use bayes rule to compute conditional probability that fizo }
+\CommentTok{# given that eats meat answer is yes}
+\NormalTok{cond_prob_fizo_meat <-}\StringTok{ }\KeywordTok{compute_bayes}\NormalTok{(}\DataTypeTok{prior_a =}\NormalTok{ prior_prob_fizo, }
+                                     \DataTypeTok{prior_b =}\NormalTok{ prob_meat, }
+                                     \DataTypeTok{likelihood =}\NormalTok{ prob_meat_fizo)}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent
+Next, we compute the expected utility of getting a specific answer
+(\(U(eatsMeat = yes)\)). Recall that we define an answer's utility as
+it's information gain, which is a function of the prior and posterior
+entropy.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# compute prior and posterior entropy}
+\NormalTok{prior_entropy <-}\StringTok{ }\KeywordTok{compute_entropy}\NormalTok{(}\KeywordTok{c}\NormalTok{(prior_prob_fizo, }
+\NormalTok{                                   prior_prob_glom))}
+
+\NormalTok{posterior_entropy <-}\StringTok{ }\KeywordTok{compute_entropy}\NormalTok{(}\KeywordTok{c}\NormalTok{(cond_prob_fizo_meat, }
+\NormalTok{                                       cond_prob_glom_meat))}
+
+\CommentTok{# compute information gain}
+\NormalTok{utility_yes_meat <-}\StringTok{ }\KeywordTok{compute_utility_answer}\NormalTok{(prior_entropy, }
+\NormalTok{                                           posterior_entropy)}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent
+Next, we apply the same procedure to get the utility of the answer
+\enquote{no} for the \enquote{eats meat?} question
+(\(U(eatsMeat = no)\)).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# use bayes rule to compute conditional probability that glom }
+\CommentTok{# given that eats meat answer is no}
+\NormalTok{cond_prob_glom_notMeat <-}\StringTok{ }\KeywordTok{compute_bayes}\NormalTok{(}\DataTypeTok{prior_a =}\NormalTok{ prior_prob_glom, }
+                                        \DataTypeTok{prior_b =} \DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat, }
+                                        \DataTypeTok{likelihood =} \DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat_glom)}
+
+\CommentTok{# use bayes rule to compute conditional probability that fizo }
+\CommentTok{# given that eats meat answer is no}
+\NormalTok{cond_prob_fizo_notMeat <-}\StringTok{ }\KeywordTok{compute_bayes}\NormalTok{(}\DataTypeTok{prior_a =}\NormalTok{ prior_prob_fizo, }
+                                        \DataTypeTok{prior_b =} \DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat, }
+                                        \DataTypeTok{likelihood =} \DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat_fizo)}
+
+\CommentTok{# compute prior and posterior entropy}
+\NormalTok{prior_entropy <-}\StringTok{ }\KeywordTok{compute_entropy}\NormalTok{(}\DataTypeTok{probability_vector =} \KeywordTok{c}\NormalTok{(prior_prob_fizo, }
+\NormalTok{                                                        prior_prob_glom))}
+
+\NormalTok{posterior_entropy <-}\StringTok{ }\KeywordTok{compute_entropy}\NormalTok{(}\DataTypeTok{probability_vector =} \KeywordTok{c}\NormalTok{(cond_prob_fizo_notMeat, }
+\NormalTok{                                                            cond_prob_glom_notMeat))}
+
+\CommentTok{# compute information gain for the answer}
+\NormalTok{utility_no_meat <-}\StringTok{ }\KeywordTok{compute_utility_answer}\NormalTok{(prior_entropy, posterior_entropy)}
+\end{Highlighting}
+\end{Shaded}
+
+\noindent
+Finally, to compute the overall expected utility of the \enquote{eats
+meat?} question (\(EU(Q)\)), we weight the utility of each answer by the
+prior probability of getting that answer.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{utility_meat_q <-}\StringTok{ }\KeywordTok{compute_utility_question}\NormalTok{(prior_entropy,}
+                                           \KeywordTok{c}\NormalTok{(utility_yes_meat, utility_no_meat),}
+                                           \KeywordTok{c}\NormalTok{(prob_meat, }\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{prob_meat))}
+
+\KeywordTok{paste0}\NormalTok{(}\StringTok{"The expected utility of the eats meat question is: "}\NormalTok{, utility_meat_q)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "The expected utility of the eats meat question is: 0.43"
+\end{verbatim}
 
 
 
