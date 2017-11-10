@@ -1,0 +1,305 @@
+1. How do people construct a set of hypotheses?
+
+	- the OED framework does not easily apply to situations where learners 1.) con- sider the wrong hypotheses for the task, 2.) con- sider only one hypothesis, or 3.) do not consider hypotheses at all. 
+
+	- Social solution: other people can set up the relevant hypotheses and restrict the hypothesis space (e.g., social cues and referential ambiguity)
+
+
+2. How do people generate a set of questions?
+
+	- Yet only some subjects asked really clever and revealing questions. The modal participant asked much more mundane and only moderately informative questions. This is not, however, because participants could not recognize a good question when they saw one
+
+
+	- Question types:
+		- label query: participants can typically only inquire about the category membership of unlabeled items [ For example, children often learn by pointing out objects in the environment and have an adult label them]
+		- feature query: learners can also ask about the im- portance of entire features or dimensions of cat- egories. [For example, a naive learner might ask whether the ability to sing is an important fea- ture for telling whether something is a bird.]
+		
+		- demonstration queries: provides a positive example of the category [For example, one might want to ask to see a good or typical example of a category member (“What does a typical bird look like?”)]
+			- similarly in humans, demonstration queries are particularly useful for learning new skills. Im- portantly, the usefulness of demonstration queries depends on the level of knowledge or expertise
+
+	- Social solution - look to experts to generate good questions, but you have to recognize good questions when you see them. this requires some of the OED machinations
+		- "the modeler first needs to figure out which features to to use (or build from other features). This process typi- cally relies on human input from experts with do- main knowledge and it precedes the actual learn- ing phase of the model. "
+		- choice of expert matters a lot for demonstration queries 	
+		- Young children expect people, but not objects, to execute actions based on goals and plans (Meltzo↵, 1995; Woodward, 1998). This means that, similar to adults, young children observing a person behave in an intentional but strange manner might become aware of a knowledge gap and try to find out what goals or intentions could explain this behavior.
+
+
+	- Cognitive constraints solution
+		- Foundational knowledge, sometimes referred to as core knowl- edge (Carey & Spelke, 1996; Spelke & Kinzler, 2007), may constrain query generation already in early childhood, when specific world knowledge is still sparse. For example, we know that infants are endowed with a system of object represen- tation involving spatio-temporal principles (such as cohesion, continuity, and support, Spelke & Kinzler, 2007).
+		- For example, it has been shown that chil- dren engage in more information seeking behav- iors when their prior expectations about causal re- lationships or spatio-temporal principles are vio- lated than when they are confirmed (Legare, 2012; Stahl & Feigenson, 2015). 
+
+
+
+3. What makes a “good” answer?
+
+	- What's the utility of an answer? 
+
+		- informational utility functions are based solely on probabili- ties and on how answers change probabilities
+
+			- information gain
+			- probability gain
+			- KL divergence
+
+		- situation-specific utility functions take into account that learners collect information for a specific purpose beyond pure knowledge gain1 (e.g., saving time, money, or cognitive resources )
+
+	- A good answer is relevant to the given query and adds information above and beyond what is already known by the learner. Answers differ in quality based on the amount of information they provide, but it is possible for two answers to be equally good if they offer the same query-specific information (that is, it does not matter if one answer provides additional infor- mation that was not called for by the query). 
+
+	- Reasoning about the expertise of another person might change the amount of belief updating that occurs from a certain answer
+
+
+
+4. How do people generate and weight possible answers to their queries?
+
+	- which answers people antic- ipate to begin with and what probabilities are as- signed to them. For example, if you ask someone “Which city do you live in?”, an OED model re- quires you to consider each possible answer (“New York”, “Boston”, “Austin”, “Denver”, etc...) and to weight the utility of that answer by the prob- ability of receiving it.
+	
+	- what answers are plausible? and how plausible are they relative to one another
+	- Some questions have rather obvious or simple answer spaces (e.g., a true/false question returns either of two answers)
+
+
+5. How does learning from answers affect query selection?
+
+	- learners anticipate how the answers to their queries will change their current beliefs. how would this answer change my current belief?
+
+	- this seems like the easiest point to integrate the social reasoning accounts and OED and in fact has been done a bit (Hawkins et al, 2016)
+
+			If the answerer chooses their examples randomly, for example by selecting a random item in a category, a learner cannot draw any inference beyond the information provided (in this case, the category label). In a teaching context, on the other hand, learners can usually expect examples to carry more information than just labels, since they expect teachers to choose particular examples that will help the learner generalize. For example, teachers might provide prototypical examples of a category to allow the learner to pick up on the relevant features needed for future classification.
+
+			An important question for future research is how askers and answerers simulate the mental states of their counterpart and how many levels of re- cursive inference
+
+			Second, when answers are provided by other people, as it is often the case during inquiry, learners’ inferences will be constrained by pragmatic and pedagogical considerations. Thus, to build realistic inquiry models, we need a better understanding of the psychological underpinnings of these kinds of inferences in social contexts.
+
+	- same "answer" but from different generative process can lead to different inferences. this will change the update function when learner gets an answer to a query and thus can affect the behaviors that people select
+
+6. How do cognitive constraints influence inquiry strategies?
+
+	- There are many factors that have yet to be explored with respect to their impact on strategy selection during inquiry, including task difficulty, working memory capacity, fatigue, and stress
+		- Research into these topics will allow the field to move beyond simple demonstrations of the OED principle and help explain and predict inquiry behavior in different environments and given par- ticular circumstances of the learner.
+
+	- Social context -> do learners rely on others to "signal" when a question asking strategy is beneficial? how do adults signal this [that question asking is good in this context] to children?
+
+
+
+7. What triggers inquiry behaviors in the first place?
+
+
+	- The importance of such goals is made clear by the fact that in experiments designed to evaluate OED principles, participants are usually instructed on the goal of a task and are often incen- tivized by some monetary reward tied to achieving that goal. 
+
+	- The constraints of popular ex- perimental paradigms simply help control for and standardize the measured behavior across partici- pants, while still capturing the key aspects of self- motivated inquiry. 
+			- One objection to this view is that at any given moment there are many possible inquiry tasks a learner might decide to pursue.
+
+	- OED provides a good explanation of behavior when you have a clearly defined inquiry goal, clear set of hypotheses, can generate a set of questions, and estimate the probability and utility of the answers to those questions. 
+
+			- OED works within a "task frame" -->  setting in which certain hypotheses and actions become rele- vant 
+
+	- how do we choose tasks???
+		
+		- sub-goal contstruction
+
+				However, there also exist cases in which goal partitions emerge not from an informational anal- ysis of every individual problem, but via a learn- ing process across many problems that yields a kind of “template” for asking questions in some domain.
+						- In many domains such templates do not even need to be learned, be- cause they have been developed by others and can be taught easily. 
+		
+		- curiosity
+
+				For example, it is well-known that children spontaneously explore objects with some level of complexity or uncertainty without any instruction to do so (Cook et al., 2011; Kidd, Piantadosi, & Aslin, 2012; Schulz & Bonawitz, 2007; Stahl & Feigenson, 2015).
+
+
+
+
+8. How does inquiry-driven learning influence what we learn?
+
+		- Natural sampling vs. artificial sampling point (two forms of artificial sampling: active vs. social)
+		- stopping decisions are a really interesting point  
+
+
+
+9. What is the developmental trajectory of question-asking abilities?
+
+	- that is, without instruction, young children tend to have a desire to change many things at once, rather than testing individual factors in isolation. One reason for this preference, iden- tified by Kuhn et al. (2000), is that children often have not developed a metastrategic understanding of why controlling variables works
+
+	- To rec- oncile this with the view that children still fol- low optimal epistemic principles (like OED), some have argued that children might simply enter the world with a broader hypothesis space, weaker pri- ors, and/or fewer cognitive resources, which trans- lates to seemingly noisy or more exploratory be- havior (Bonawitz, Denison, Gri
+
+	- In particular, younger children were more likely to use hypothesis-scanning questions, that test one particular hypothesis, than constraint- seeking questions that can narrow down the entire hypothesis space (see also, Mosher & Hornsby, 1966). This suggests that designing sophisticated testing strategies that pertain to multiple hy- potheses is another skill that develops over time.	
+
+	- children’s theories about the world, their cognitive capacities, and their understanding of their own actions as means to test theories.
+
+
+Computational models of how humans interpret each other’s questions in a given context, could be used to improve artificial agents in their ability to account for their conversa- tion partner’s goals and constraints when answer- ing and generating questions.
+
+
+----
+
+early social contexts:
+  set up learners goals --> trigger inquiry behaviors
+  constrain hypotheses
+  modulate stopping decisions
+  generate questions or provide question templates
+  change how learners update beliefs depending on sampling assumptions about others goals
+  change situation-specific utility functions by adding goals other than pure information gain (e.g.,reputation management)
+
+
+  inquiry goals
+
+	- who should i learn from? 
+	- what is this speaker referring to? 
+	- what types of objects are called "daxes"
+	- how does this toy work? 
+	- how do I say this word?
+	- where should i look?
+
+
+
+-------------------------
+
+why inquriy in OED framework is hard?
+
+gaps in active learning developmental work
+
+	- cost of active sampling --> traditional solution is approximate interference in sampling model, but there might be an interesting resrouce rational take here: that is, it's rational for children to deviate from OED principles if the learning context/environment consistently meets your inquiry goals. 
+	- computational intractability of OED framework esp for kids
+	- value of a question
+
+
+what social learning contexts are good at doing? 
+
+	- generating question templates
+	- constraining the hypothesis space 
+	- providing good information
+
+internal social
+	- enhanced attention
+	- different inferences
+
+external social
+	- information for the learner 
+	- generalizable to other contexts
+
+internal active
+	- enhance attention
+	- provde the right information at the right time
+	- are all benefits of active learning internal? 
+
+
+
+--------------------
+
+sobel & kirkham notes
+
+how social learning affects statistical learning
+
+	- social cueing guides attention to relevant input 
+	- expectations about others' beliefs can change causal inferences 
+		- e.g., teaching limits exploration but makes exploitation more efficient
+	- 
+
+
+"But critically, actions also allow children to be active in the learning processdthey must decide what to do, and this decision process might influence how they act and how they learn from those actions."
+
+"Children whose actions exploit what another does, as opposed to discovers efficacy on their own showed no benefit to acting on the causal system than children who simply observed another act."
+
+	- discovery > active after observsing someone else = observing someone else
+
+
+--------------------
+
+computational rationality models
+
+
+	components:
+		- probabilistic representations (bayesian networks; DAGs): encode uncertainty 
+		- Bayesian updating based on incoming information to revise probability distributions over states
+		- mechs for reasoning about feasiblity and implications of actions
+		- mechs for ressoning about precision and timeliness of actions --> "metareasoning"
+
+
+how to operationalize cost in PGM and expected utitlity theory
+
+
+	- "Metalevel analyses have been aimed at endowing computational systems with the ability to make expected utility decisions about the ideal balance between effort or delay and the quality of actions taken in the world."
+
+	- "decision-theoretic models of bounded ra- tionality"
+
+
+
+	- to deal with cost of OED style models:
+		1. approximations approach: developing approximations that exploit the structure of real-world problems
+		2. trade off sampling time for accuracy
+		3. trade off model complexity: size and level of abstraction
+		
+-------------------
+
+
+Sorry about the travel-induced delay. Overall, what you sent (intro, part 1) was great. 
+
+
+
+
+One distinction that's relevant for Part 1 and wasn't as clear as it might have been is what aspects of the benefits of the social environment are *internal* to the learner vs *external*. 
+
+
+One place this felt a little confused was in the natural pedagogy bits - first, natural pedagogy has an attentional component (also internal to agents) and second, it's supposed to be generalizable information (for the agent). So putting this in the environment felt like it didn't quite fit... 
+
+you might consider discussing how natural pedagogy relates to your breakdown of the ideas rather than fitting it into one subsection? 
+
+
+
+----------------------
+
+### Social information seeking 
+
+Active social learning - seek information from social targets. Models of seeking information from social targets: 
+
+  * Baldwin & Moses (1998): The Ontogeny of Social Information gathering
+  * Chouinard (2007): Children's questions as learning mechanism
+  * Hyo's and Liz Bonawitz's work
+
+These studies of the benefits of active information selection connect nicely to developmental work on children's question asking. Verbal questions are a spontaneous behavior that occurs in everyday interactions that could allow children to seek information that is directly relevant to their current interests and misconceptions. Moreover, asking a good question is complex: the child must know what they don’t know, how to ask about it, who to ask about it, and be able to assimilate new information. 
+
+However, other work has focused on the social context in which question asking occurs.
+
+
+
+
+
+---------------------
+
+
+# Part IV: Costs in active-social learning
+
+Active learning takes into account a utility structure that can include both the costs of data acquisition and the rewards of choosing an example (e.g., in terms of information acquisition/uncertainty reduction relative to some longer term learning goal). 
+
+Active learning in social contexts. The presence of another agent can change the cost/benefit structure of choices made for learning and therefore models of self-directed learning should include this information. In contrast, these models often view the learner as moving back and forth between active exploration and passive reception. This type of active learning account does not leave room for social reasoning processes (i.e., naive utility calculus, goal reasoning) to change the utility of active learning behaviors.
+
+### Metacognition 
+
+### Question asking
+
+--------------------
+
+Lindley notes
+
+	- key point is that we don't just do stuff to make decisions about what to next; instead, we do stuff to geather informationa bout the world. we care about information not just the next action. 
+
+	- do the thing for which expected information gain is highest and keep doing that action until you reach some pre-determined amount of information collected
+
+	- "the maxi- mum information, in a statistician's sense, will be obtained when the prob- ability distribution is concentrated on a single value of 0, and the information will be reduced as the distribution of 0 "spreads"; "
+
+	- what's the purpose of stats? decisions or gain information: 
+
+		- Lindley says, "Without wishing to take sides in the issue we propose in this section of the paper to investigate some elementary consequences of the attitude that the purpose of some statistical experimenta- tion is to gain and measure information about the state of nature."
+
+	- To take an extreme case, if the prior distribution is concentrated on a single parameter value, that is, if the state of nature is known, then no experiment can be in- formative
+
+
+
+---------------------
+
+Guided participation and play
+
+
+Rogoff: "
+	Caregiver orients child involved introducing new information or structure to the child (at any point in the episode) regarding the overall goals or a key part of the event or what was expected in the situation. Orienting framed a major goal, not just specific little directives for particular actions. The extent of verbal as opposed to nonverbal orienting was analyzed for variation across communities. To count as telling the child what to do, words had to carry information regarding the general agenda, not just a direction to "do it," although they did not need to be complete in themselves (e.g., "Pull it like this" while pulling the jumping-jack string would be coded as both verbal and nonverbal). Sometimes the orienting did not explain what to do but told the child in other ways what kind of activity it was, such as introduc- ing the jar by saying, "What's inside th"
+
+	rning). The goals and means of guided participation in two middle-class communities involved an empha- sis on verbal rather than nonverbal instruction and adult structuring of children's motivation and involvement in learning through adult play and conversation as peers with young children and through the provision of lessons. The means of guided participation in two non-middle-class commu- nities involved greater explicitness of nonverbal communication, responsi- bility of children to learn with sensitive assistance from caregivers, skilled sharing of attention between competing events evidencing keen observation, and engagement as members embedded in group a
+
+Weisberg
+
+	

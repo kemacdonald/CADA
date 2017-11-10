@@ -1,0 +1,66 @@
+---
+title: "CADA writing notes"
+---
+
+**Active learning is social**
+
+- Hypothesis: the social context can change the cost/benefit structure of choices made for learning and therefore we must include this information in our models of self-directed learning, which often view the learner as moving back and forth between active exploration and passive reception. This type of active learning account does not leave room for social reasoning processes (i.e., native utility calculus stuff) to change the value of an active learning behavior.
+- Effective active learning involves generating the best evidence relative to your current state (hypotheses, cognitive resources, time, and goals). 
+- Note that there's an interesting distinction between active learning behaviors that directly affect social targets (or are directed towards social targets) such as questions and social referencing compated to active learning behaviors that might be changed by the presence of a social partner or being in a communicative context such as gaze patterns to explore the visual world or motor behaviors to explore a new toy.
+
+**Social learning is active**
+
+- Hypothesis: Social interactions that yield information can productively be construed as active learning. 
+- Teaching is providing opportunities for learner to engage in effective active learning.
+- Inference about inferences, or what would other people learn given their hypothesis and some evidence. Teaching as inverting the active learning process of another. 
+- Effective active learning involves generating the best evidence relative to your current state (hypotheses, cognitive resources, time, and goals). 
+
+**Active information gathering via fixations during language learning**
+
+
+"Evolutionary models assume that our learning psychology has a genetically heritable “information quality threshold” that governs whether an individual relies on inferences from environmental cues or learns from others." 
+
+"In contrast, an organism capable of cultural learning can afford to be choosy, learning individually when it is cheap and accurate, and relying on cultural learning when environmental information is costly or inaccurate.""
+
+"For example, a rare chance observation might allow a hunter to associate a particular spoor with a wounded polar bear, or to link the color and texture of ice with its stability on windy days just after a thaw. Such rare cues allow accurate low-cost inferences about the environment. However, most individuals will not observe these cues, and thus making the same inference will be much more difficult for them. Organisms that cannot imitate must rely on individual learning, even when it is difficult and error prone. They are stuck with whatever infor- mation that nature offers." 
+
+
+Why should we care about the conversational context?
+
+What does a converstation look like? What behaviors are available? How are they changed by the social context?
+
+## Behavior 1: speaker choice
+
+### Utility analysis
+### Ecological opportunity
+
+## Behavior 2: visual/auditory attention (integrating between success and failures)
+
+### Utility analysis
+### Ecological opportunity
+
+## Behavior 3: questions (why didn't questions get asked in this setting?) --> Markman et al. 
+
+### Utility analysis
+### Ecological opportunity
+
+
+Taxonomy of social learning:
+
+    -  observational learning
+    -  imitation learning
+    -  pedagogical inference
+    -  social as attention vs. social as changing underlying inferences because of reasoning about others minds
+
+
+Further, when interaction with an avatar is controlled by a real person rather than a computer, people experience higher levels of arousal, learn more, and pay more attention (Okita, Bailenson, & Schwartz, 2008).
+
+in fact, when social contingency was established in an electronic format (i.e., via Skype or a similar live video chat program), children learned equally well from a real person and a “digitally live” on-screen interaction (Roseberry et al., 2014). They did not learn from watching a digital interaction between the adult and another child.
+
+
+
+
+- Young children expect people, but not objects, to execute actions based on goals and plans (Meltzo↵, 1995; Woodward, 1998). This means that, similar to adults, young children observing a person behave in an intentional but strange manner might become aware of a knowledge gap and try to find out what goals or intentions could explain this behavior.
+
+
+    * However, there also exist cases in which goal partitions emerge not from an informational anal- ysis of every individual problem, but via a learn- ing process across many problems that yields a kind of “template” for asking questions in some domain. Consider for example the “Five Ws” (Who? What? When? Where? Why?) that serve as a template for question-asking subgoals in many different areas of inquiry and for many di↵erent types of over-goals (solving a crime, fol- lowing a storyline, understanding the causal struc- ture of an event, etc.).
