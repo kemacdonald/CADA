@@ -49,7 +49,7 @@ p_hula_fizo <- 0.9
 ##### compute prior entropy. this captures everything the learner knows and how well they know it
 prior_ent_learner <- compute_entropy(probs_vect = c(p_glom, p_notglom))
 
-#### compute information gain if the the answer was "yes" hula wor
+#### compute information gain if the the answer was "yes" to the hula question
 cond_prob_glom_hula <- bayes_fun(p_glom, p_hula, p_hula_glom)
 cond_prob_fizo_hula <- bayes_fun(p_notglom, p_hula, p_hula_fizo)
 
